@@ -21,4 +21,8 @@ chapters:  #  需要为每个章节指定章节名,章节内容( markdown 文件
     article: "../b32_走进中国历史的长廊/d52_中坦友谊_共筑生命之光.md"
     video: "player.bilibili.com/player.html?aid=1451720108&bvid=BV1bi421o7DN&cid=1465401626&p=1"
     code: "../b32_走进中国历史的长廊/12_awk.sh"
+  - title: "第06节_将进酒"
+    article: "../b32_走进中国历史的长廊/42_这里可以运行草蟒版python.md"
+    video: "player.bilibili.com/player.html?aid=317812086&bvid=BV1cP411Y7gN&cid=1250943185&p=1"
+    code: "../b32_走进中国历史的长廊/41_cloudstudio_40_hdnb.sh"
 # 添加更多章节...
