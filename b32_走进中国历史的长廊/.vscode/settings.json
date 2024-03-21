@@ -97,6 +97,9 @@
 	"codetour.recordMode": "pattern",
 	"codetour.showMarkers": true,
 	"codetour.promptForWorkspaceTours": true,
+	"workbench.editorAssociations": {
+		"*.hdnb": "handydandy-notebook"
+	  },
 	"[go][go.mod]": {
 		"editor.codeActionsOnSave": {
 			"source.organizeImports": "explicit"
