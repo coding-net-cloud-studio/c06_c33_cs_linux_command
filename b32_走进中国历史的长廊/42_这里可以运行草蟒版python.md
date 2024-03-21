@@ -16,7 +16,7 @@
 print("混合双打")
 ```
 
-![将进酒](./wmimages/b70_qiang_jin_jiu.png)
+![将进酒](https://www.mianfeiwendang.com/pic/a2a8e5463f16be6d3760cd7b/1-810-jpg_6-1080-0-0-1080.jpg)
 
 ```py3
 # NOTE 30_中文版本
@@ -38,18 +38,6 @@ def 读古诗_赠汪伦():         # 没有参数的函数
 cloudstudio d33_邱小姐在梳妆台梳辫子_熔盐热能电厂.hdnb
 ```
 
-<!-- NOTE 40_百年未有之大变局,时机已到,2024年06月你该来北京"亮剑"了 -->
-
-<!-- <iframe 
-    src="//player.bilibili.com/player.html?aid=217752998&bvid=BV1ka41137Pk&cid=827425283&page=1" 
-    scrolling="no" 
-    border="0" 
-    frameborder="no" 
-    framespacing="0" 
-    allowfullscreen="true"  
-    width="600px" 
-    height="500px" > 
-</iframe> -->
 
 ```bash
 # 50_测试直接执行bash的script
