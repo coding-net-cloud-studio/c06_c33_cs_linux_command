@@ -17,8 +17,8 @@ chapters:  #  需要为每个章节指定章节名,章节内容( markdown 文件
     article: "../c50_resources/b26_markdown/command/grep.md"
     video: "player.bilibili.com/player.html?aid=547421812&bvid=BV1Gq4y1M716&cid=391748456&p=1"
     code: "../b32_走进中国历史的长廊/g32_AI工具集_国内版.xlsx"
-  - title: "vue 学习"
-    article: "../examples/vue.md"
-    video: ""
-    code: "../src/components/HelloWorld.vue"
+  - title: "第05节_handy_notebook转_markdown"
+    article: "../b32_走进中国历史的长廊/d52_中坦友谊_共筑生命之光.md"
+    video: "player.bilibili.com/player.html?aid=1451720108&bvid=BV1bi421o7DN&cid=1465401626&p=1"
+    code: "../b32_走进中国历史的长廊/12_awk.sh"
 # 添加更多章节...
