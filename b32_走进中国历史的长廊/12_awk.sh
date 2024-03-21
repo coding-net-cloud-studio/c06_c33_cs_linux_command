@@ -8,5 +8,5 @@
 # 02_在本编辑器中_点击鼠标右键_选择_"Run Code"的_菜单选项
 # 03_在本编辑器中_按组合键_Alt+Ctrl+N
 
-/.PlnPyKFp4CRfFtgC1/vendor/modules/code-oss-dev/bin/remote-cli/cloudstudio \
+cloudstudio \
     d33_邱小姐在梳妆台梳辫子_熔盐热能电厂.hdnb
