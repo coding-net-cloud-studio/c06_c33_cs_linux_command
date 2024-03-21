@@ -378,6 +378,15 @@ l77_clean_root_pyenv_sub_directories(){
 	return 0
 }
 
+# NOTE 做一些设置
+l79_final_settings(){
+
+	if [[ -f /.PlnPyKFp4CRfFtgC1/vendor/modules/code-oss-dev/bin/remote-cli/cloudstudio ]]; then
+		ln -s /.PlnPyKFp4CRfFtgC1/vendor/modules/code-oss-dev/bin/remote-cli/cloudstudio /usr/bin/cloudstudio
+	fi
+	return 0
+}
+
 # ==============================================================
 # NOTE 定义main()函数的主体
 f94_2828_30_main(){
@@ -403,6 +412,8 @@ f94_2828_30_main(){
 
 	# NOTE 增加一个clean的函数_释放/root/.pyenv下更多的空间
 	l77_clean_root_pyenv_sub_directories
+
+	l79_final_settings
 
 	return 0
 }
