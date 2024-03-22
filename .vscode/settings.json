@@ -107,6 +107,28 @@
 	},
 	// https://blog.csdn.net/qq_57749525/article/details/122509663
 
+	// https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command
+	"multiCommand.commands": [
+		{
+			"command": "multiCommand.down3Lines",
+			"sequence": [
+				"cursorDown",
+				"cursorDown",
+				"cursorDown"
+			]
+		},
+		{
+			"command": "multiCommand.swapChar",
+			"interval": 30,
+			"sequence": [
+				"cursorLeftSelect",
+				"editor.action.clipboardCutAction",
+				"cursorRight",
+				"editor.action.clipboardPasteAction"
+			]
+		}
+	],
+
 	"automaton.list": {
 		"markdownShowPreview": {
 			"description" : "如何把handy_notebook的hdnb文件用handy扩展给展现出来",
@@ -132,7 +154,7 @@
 				// "workbench.action.terminal.toggleTerminal"
 				// "vscode-command-inspector.dumpExtensionCommandsAsJSON"
 
-				"handydandy-notebook.openInNotebook",
+				"multiCommand.down3Lines",
 
 
 				
