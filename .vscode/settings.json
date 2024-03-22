@@ -121,7 +121,7 @@
 				"cursorBottom",
 				{ 
 					"command": "type",
-					"args": { "text": "Hello_这是我写的" }
+					"args": { "text": "Hello_这是我写的_在文件中_${file}" }
 				}
 
 			]
