@@ -111,6 +111,28 @@ l06_copy_06_example(){
 	return 0
 }
 
+
+#  ==============================================================
+# NOTE 本cloudstudio教学仓库下面_自带的_安装vscode扩展的_那个目录
+# NOTE 本函数被f94_2828_30_main()函数所调用
+l07_this_git_call_script_to_install_vscode_ext(){
+	export v08_OLDPWD=$(pwd)
+
+	if [[ -d ./03_vscode_extension ]]; then
+		cd ./03_vscode_extension
+
+		if [[ -f ./03_cloudstudio_install_vsix.sh ]]; then
+			# NOTE 执行安装脚本
+			./03_cloudstudio_install_vsix.sh
+		fi
+	fi
+
+	cd ${v08_OLDPWD}
+	return 0
+}
+
+
+
 # NOTE 调用安装grasspy的脚本
 l08_call_script_to_install_vscode_ext(){
 	export v08_OLDPWD=$(pwd)
@@ -392,26 +414,31 @@ l79_final_settings(){
 f94_2828_30_main(){
 
 	# 无论何时都先尝试建立这样一个目录
-	mkdir -p /root/.pyenv
+	# mkdir -p /root/.pyenv
 
 	f16_cs_vs_settings_user_update
 
 	f20_linux_git_setting
 
-	f23_install_some_software
+	# f23_install_some_software
 
 	# NOTE 下面是老版本p27的_这里不再调用了
 	# l10_install_me
 
 	# 需要从gitee上获取新的pyenv环境
-	l30_git_clone_and_install_new_pyenv
+	# l30_git_clone_and_install_new_pyenv
 
 	# NOTE 通过git_subtree的形式把子git仓库加入进来_并新增一个cloudstudio的窗口
 	# NOTE 这个模式太复杂了_相互协调很麻烦_放弃了
 	# l57_30_git_clong_c28_aig_meetup
 
 	# NOTE 增加一个clean的函数_释放/root/.pyenv下更多的空间
-	l77_clean_root_pyenv_sub_directories
+	# l77_clean_root_pyenv_sub_directories
+
+	# NOTE 如果本cloudstudio社区版本的教学仓库中_具有自带的_03_vscode_extension目录
+	# NOTE 该目录下_具有很少数的几个必须安装的vscode扩展
+	# NOTE 把这几个扩展给安装上
+	l07_this_git_call_script_to_install_vscode_ext
 
 	l79_final_settings
 
