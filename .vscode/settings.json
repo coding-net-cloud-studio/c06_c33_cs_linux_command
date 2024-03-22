@@ -117,7 +117,8 @@
 						"delay": 1000
 					}
 				},
-				"markdown.showPreviewToSide"
+				"handydandy-notebook.showPreviewToSide"
+				// "markdown.showPreviewToSide"
 			]
 		}
 	}

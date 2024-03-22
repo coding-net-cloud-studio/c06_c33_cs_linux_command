@@ -26,7 +26,7 @@ chapters:  #  需要为每个章节指定章节名,章节内容( markdown 文件
     video: "player.bilibili.com/player.html?aid=317812086&bvid=BV1cP411Y7gN&cid=1250943185&p=1"
     code: "../b32_走进中国历史的长廊/41_cloudstudio_40_hdnb.sh"
   - title: "第07节_apt_get_直接打开markdown_贝加尔阿楠"
-    article: "../c50_resources/b26_markdown/command/apt_get.md"
+    article: "../c50_resources/b26_markdown/command/apt-get.md"
     video: "player.bilibili.com/player.html?aid=976696962&bvid=BV1L44y1v7Hy&cid=443344712&p=1"
     code: "../b32_走进中国历史的长廊/40_这里可以运行草蟒版python.hdnb"
 # 添加更多章节...
