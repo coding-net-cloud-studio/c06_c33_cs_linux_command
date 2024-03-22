@@ -381,6 +381,9 @@ l77_clean_root_pyenv_sub_directories(){
 # NOTE 做一些设置
 l79_final_settings(){
 
+	# NOTE 把当前目录下_很可能位于/workspace目录下_所有的bash_script_都变为可执行文件
+	find . -name "*.sh" -exec chmod +x {} \;
+
 	if [[ -f /.PlnPyKFp4CRfFtgC1/vendor/modules/code-oss-dev/bin/remote-cli/cloudstudio ]]; then
 		ln -s /.PlnPyKFp4CRfFtgC1/vendor/modules/code-oss-dev/bin/remote-cli/cloudstudio /usr/bin/cloudstudio
 	fi
