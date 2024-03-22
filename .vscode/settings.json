@@ -121,11 +121,14 @@
 				// "handydandy-notebook.showPreviewToSide"
 				// "handydandy-notebook"
 				// "workbench.extensions.action.showInstalledExtensions"
+				// "cloudstuido.getBrowserUrl"
 
 				// 下面的可以发挥作用
 				// "markdown.showPreviewToSide"
 				// "workbench.action.terminal.toggleTerminal"
-				"cloudstuido.getBrowserUrl"
+
+				"workbench.action.reloadWindow"
+				
 	
 
 			]
