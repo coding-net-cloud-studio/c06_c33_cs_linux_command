@@ -1,0 +1,245 @@
+{
+  "jaaxxx.handydandy-notebook-icon": {
+    "id": "jaaxxx.handydandy-notebook-icon",
+    "identifier": {
+      "value": "jaaxxx.handydandy-notebook-icon",
+      "_lower": "jaaxxx.handydandy-notebook-icon"
+    },
+    "isBuiltin": false,
+    "isUserBuiltin": false,
+    "isUnderDevelopment": false,
+    "extensionLocation": {
+      "$mid": 1,
+      "fsPath": "/home/aia/.vscode/extensions/jaaxxx.handydandy-notebook-icon-0.0.1",
+      "path": "/home/aia/.vscode/extensions/jaaxxx.handydandy-notebook-icon-0.0.1",
+      "scheme": "file"
+    },
+    "uuid": "dccc2645-dd7b-4c21-90f1-6cff721a058b",
+    "targetPlatform": "undefined",
+    "name": "handydandy-notebook-icon",
+    "publisher": "jaaxxx",
+    "displayName": "Handy Dandy Notebook Icon",
+    "description": "Icon for notebook for evaluating scripts in a variety of languages",
+    "version": "0.0.1",
+    "repository": {
+      "url": "https://github.com/JacksonKearl/vscode-handydandy-notebook"
+    },
+    "icon": "notebook.png",
+    "engines": {
+      "vscode": "^1.57.0"
+    },
+    "categories": [
+      "Notebooks"
+    ],
+    "contributes": {
+      "languages": [
+        {
+          "id": "hdnb",
+          "aliases": [
+            "Handy Dandy Notebook"
+          ],
+          "extensions": [
+            ".hdnb"
+          ],
+          "icon": {
+            "dark": "./media/icon2x.png",
+            "light": "./media/icon2x.png"
+          }
+        }
+      ]
+    },
+    "devDependencies": {},
+    "dependencies": {}
+  },
+  "jakearl.handydandy-notebook": {
+    "id": "jakearl.handydandy-notebook",
+    "identifier": {
+      "value": "jakearl.handydandy-notebook",
+      "_lower": "jakearl.handydandy-notebook"
+    },
+    "isBuiltin": false,
+    "isUserBuiltin": false,
+    "isUnderDevelopment": false,
+    "extensionLocation": {
+      "$mid": 1,
+      "fsPath": "/home/aia/.vscode/extensions/jakearl.handydandy-notebook-0.1.4",
+      "path": "/home/aia/.vscode/extensions/jakearl.handydandy-notebook-0.1.4",
+      "scheme": "file"
+    },
+    "uuid": "f4417e5f-cb7a-4baa-94fe-92650829cf01",
+    "targetPlatform": "undefined",
+    "name": "handydandy-notebook",
+    "publisher": "jakearl",
+    "displayName": "Handy Dandy Notebook",
+    "description": "Notebook for evaluating scripts in a variety of languages",
+    "version": "0.1.4",
+    "repository": {
+      "url": "https://github.com/JacksonKearl/vscode-handydandy-notebook"
+    },
+    "icon": "notebook.png",
+    "engines": {
+      "vscode": "^1.57.0"
+    },
+    "categories": [
+      "Notebooks"
+    ],
+    "activationEvents": [
+      "onCommand:handydandy-notebook.newNotebook",
+      "onCommand:handydandy-notebook.openInNotebook",
+      "onNotebook:handydandy-notebook",
+      "onNotebook:handydandy-notebook-md"
+    ],
+    "main": "./out/extension.js",
+    "scripts": {
+      "vscode:prepublish": "yarn run compile",
+      "compile": "tsc -p ./",
+      "lint": "eslint src --ext ts",
+      "watch": "tsc -watch -p ./",
+      "pretest": "yarn run compile && yarn run lint",
+      "test": "node ./out/test/runTest.js"
+    },
+    "contributes": {
+      "configuration": {
+        "type": "object",
+        "title": "Handy Dandy Notebook",
+        "properties": {
+          "handydandy-notebook.defaultLang": {
+            "type": "string",
+            "default": "javascript",
+            "description": "the language ID to use when creating a new untitled notebook with no selections"
+          },
+          "handydandy-notebook.dispatch": {
+            "type": "object",
+            "default": {
+              "python": [
+                "python",
+                [
+                  "-c",
+                  "${code}"
+                ]
+              ],
+              "typescript": [
+                "ts-node",
+                [
+                  "-T",
+                  "--skip-project",
+                  "-e",
+                  "${code}"
+                ]
+              ],
+              "javascript": [
+                "node",
+                [
+                  "-e",
+                  "(async () => { ${code} } )()"
+                ]
+              ],
+              "ruby": [
+                "ruby",
+                [
+                  "-e",
+                  "${code}"
+                ]
+              ],
+              "shellscript": [
+                "bash",
+                [
+                  "-c",
+                  "${code}"
+                ]
+              ]
+            },
+            "description": "Mapping from cell language identifiers to the commands that should be invoked to execute code in that languge, along with the arguments that should be passed to those commands, and optionally environment variables for execution",
+            "additionalProperties": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 3,
+              "items": [
+                {
+                  "type": "string",
+                  "description": "Program to execute (node, python3, etc.)"
+                },
+                {
+                  "type": "array",
+                  "description": "Array of arguments to pass to the program. The token \"${code}\" in an argument will be replaced with the cell contents, and \"${code-path}\" will be replaced with a path to the cell's contents on disk",
+                  "items": {
+                    "description": "Argument to pass to the program. ${code} will be replaced with the cell contents, ${code-path} will be replaced with a path to the cell's contents on disk",
+                    "type": "string"
+                  }
+                },
+                {
+                  "type": "object",
+                  "description": "Environment variables to pass to the execution"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "commands": [
+        {
+          "title": "New Handy Dandy Notebook",
+          "command": "handydandy-notebook.newNotebook",
+          "shortTitle": "Handy Dandy Notebook"
+        },
+        {
+          "title": "Open in Handy Dandy Notebook",
+          "command": "handydandy-notebook.openInNotebook"
+        }
+      ],
+      "menus": {
+        "commandPalette": [
+          {
+            "command": "handydandy-notebook.openInNotebook",
+            "when": "editorLangId == markdown"
+          }
+        ],
+        "file/newFile": [
+          {
+            "group": "notebook",
+            "command": "handydandy-notebook.newNotebook"
+          }
+        ]
+      },
+      "notebooks": [
+        {
+          "type": "handydandy-notebook",
+          "displayName": "Handy Dandy Notebook",
+          "priority": "default",
+          "selector": [
+            {
+              "filenamePattern": "*.hdnb"
+            }
+          ]
+        },
+        {
+          "type": "handydandy-notebook-md",
+          "displayName": "Handy Dandy Notebook",
+          "priority": "option",
+          "selector": [
+            {
+              "filenamePattern": "*.{md,markdown}"
+            }
+          ]
+        }
+      ]
+    },
+    "devDependencies": {
+      "@types/glob": "^7.1.1",
+      "@types/mocha": "^7.0.2",
+      "@types/node": "^13.11.0",
+      "@types/user-home": "^2.0.0",
+      "@types/vscode": "1.57.0",
+      "@typescript-eslint/eslint-plugin": "^4.22.0",
+      "@typescript-eslint/parser": "^4.22.0",
+      "eslint": "^6.8.0",
+      "glob": "^7.1.6",
+      "mocha": "^7.1.2",
+      "typescript": "^4.0.0",
+      "vscode-test": "^1.3.0"
+    },
+    "dependencies": {
+      "user-home": "^2.0.0"
+    }
+  }
+}

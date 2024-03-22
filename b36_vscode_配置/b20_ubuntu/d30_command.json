@@ -1,0 +1,6068 @@
+{
+  "vscode.bat": {
+    "id": "vscode.bat",
+    "name": "bat",
+    "description": "在 Windows 批处理文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.clojure": {
+    "id": "vscode.clojure",
+    "name": "clojure",
+    "description": "在 Clojure 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.coffeescript": {
+    "id": "vscode.coffeescript",
+    "name": "coffeescript",
+    "description": "在 CoffeeScript 文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.configuration-editing": {
+    "id": "vscode.configuration-editing",
+    "name": "configuration-editing",
+    "description": "在配置文件 (如设置、启动和扩展推荐文件) 中提供高级 IntelliSense、自动修复等功能",
+    "version": "1.0.0"
+  },
+  "vscode.cpp": {
+    "id": "vscode.cpp",
+    "name": "cpp",
+    "description": "在 C/C++ 文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.csharp": {
+    "id": "vscode.csharp",
+    "name": "csharp",
+    "description": "在 C# 文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.css": {
+    "id": "vscode.css",
+    "name": "css",
+    "description": "为 CSS、LESS 和 SCSS 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.css-language-features": {
+    "id": "vscode.css-language-features",
+    "name": "css-language-features",
+    "description": "为 CSS、LESS 和 SCSS 文件提供丰富的语言支持。",
+    "version": "1.0.0"
+  },
+  "vscode.dart": {
+    "id": "vscode.dart",
+    "name": "dart",
+    "description": "在 Dart 文件中提供语法突出显示和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.debug-auto-launch": {
+    "id": "vscode.debug-auto-launch",
+    "name": "debug-auto-launch",
+    "description": "当 node-debug 扩展未启用时提供自动附加的辅助程序。",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "extension.node-debug.toggleAutoAttach",
+        "title": {
+          "value": "切换开关自动附加",
+          "original": "Toggle Auto Attach"
+        },
+        "category": "Debug"
+      }
+    ]
+  },
+  "vscode.debug-server-ready": {
+    "id": "vscode.debug-server-ready",
+    "name": "debug-server-ready",
+    "description": "如果正在调试的服务器已准备就绪，在浏览器中打开 URI。",
+    "version": "1.0.0"
+  },
+  "vscode.diff": {
+    "id": "vscode.diff",
+    "name": "diff",
+    "description": "在差异文件中提供语法突出显示和括号匹配。",
+    "version": "1.0.0"
+  },
+  "vscode.docker": {
+    "id": "vscode.docker",
+    "name": "docker",
+    "description": "在 Docker 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.emmet": {
+    "id": "vscode.emmet",
+    "name": "emmet",
+    "description": "适用于 VS Code 的 Emmet 支持",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "editor.emmet.action.wrapWithAbbreviation",
+        "title": {
+          "value": "使用缩写包围",
+          "original": "Wrap with Abbreviation"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.removeTag",
+        "title": {
+          "value": "删除标记",
+          "original": "Remove Tag"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.updateTag",
+        "title": {
+          "value": "更新标记",
+          "original": "Update Tag"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.matchTag",
+        "title": {
+          "value": "转至匹配对",
+          "original": "Go to Matching Pair"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.balanceIn",
+        "title": {
+          "value": "平衡(向内)",
+          "original": "Balance (inward)"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.balanceOut",
+        "title": {
+          "value": "平衡(向外)",
+          "original": "Balance (outward)"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.prevEditPoint",
+        "title": {
+          "value": "转到上一编辑点",
+          "original": "Go to Previous Edit Point"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.nextEditPoint",
+        "title": {
+          "value": "转到下一编辑点",
+          "original": "Go to Next Edit Point"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.mergeLines",
+        "title": {
+          "value": "合并行",
+          "original": "Merge Lines"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.selectPrevItem",
+        "title": {
+          "value": "选择上一项",
+          "original": "Select Previous Item"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.selectNextItem",
+        "title": {
+          "value": "选择下一项",
+          "original": "Select Next Item"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.splitJoinTag",
+        "title": {
+          "value": "分离/联接标记",
+          "original": "Split/Join Tag"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.toggleComment",
+        "title": {
+          "value": "切换注释",
+          "original": "Toggle Comment"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.evaluateMathExpression",
+        "title": {
+          "value": "求数学表达式的值",
+          "original": "Evaluate Math Expression"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.updateImageSize",
+        "title": {
+          "value": "更新图像大小",
+          "original": "Update Image Size"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.incrementNumberByOneTenth",
+        "title": {
+          "value": "增加 0.1",
+          "original": "Increment by 0.1"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.incrementNumberByOne",
+        "title": {
+          "value": "增加 1",
+          "original": "Increment by 1"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.incrementNumberByTen",
+        "title": {
+          "value": "增加 10",
+          "original": "Increment by 10"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.decrementNumberByOneTenth",
+        "title": {
+          "value": "减少 0.1",
+          "original": "Decrement by 0.1"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.decrementNumberByOne",
+        "title": {
+          "value": "减少 1",
+          "original": "Decrement by 1"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.decrementNumberByTen",
+        "title": {
+          "value": "减少 10",
+          "original": "Decrement by 10"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "editor.emmet.action.reflectCSSValue",
+        "title": {
+          "value": "映射 CSS 值",
+          "original": "Reflect CSS Value"
+        },
+        "category": "Emmet"
+      },
+      {
+        "command": "workbench.action.showEmmetCommands",
+        "title": {
+          "value": "显示 Emmet 命令",
+          "original": "Show Emmet Commands"
+        },
+        "category": ""
+      }
+    ]
+  },
+  "vscode.extension-editing": {
+    "id": "vscode.extension-editing",
+    "name": "extension-editing",
+    "description": "在创建扩展时提供 linting 功能。",
+    "version": "1.0.0"
+  },
+  "vscode.fsharp": {
+    "id": "vscode.fsharp",
+    "name": "fsharp",
+    "description": "在 F# 文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.git": {
+    "id": "vscode.git",
+    "name": "git",
+    "description": "Git 源代码管理集成",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "git.continueInLocalClone",
+        "title": {
+          "value": "在本地克隆存储库并在桌面上打开...",
+          "original": "Clone Repository Locally and Open on Desktop..."
+        },
+        "category": "Git",
+        "icon": "$(repo-clone)",
+        "enablement": "config.git.enabled && !git.missing && gitOpenRepositoryCount != 0 && remoteName"
+      },
+      {
+        "command": "git.clone",
+        "title": {
+          "value": "克隆",
+          "original": "Clone"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.cloneRecursive",
+        "title": {
+          "value": "克隆(递归)",
+          "original": "Clone (Recursive)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.init",
+        "title": {
+          "value": "初始化仓库",
+          "original": "Initialize Repository"
+        },
+        "category": "Git",
+        "icon": "$(add)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.openRepository",
+        "title": {
+          "value": "打开仓库",
+          "original": "Open Repository"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.reopenClosedRepositories",
+        "title": {
+          "value": "重新打开已关闭的存储库...",
+          "original": "Reopen Closed Repositories..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress && git.closedRepositoryCount != 0"
+      },
+      {
+        "command": "git.close",
+        "title": {
+          "value": "关闭仓库",
+          "original": "Close Repository"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.refresh",
+        "title": {
+          "value": "刷新",
+          "original": "Refresh"
+        },
+        "category": "Git",
+        "icon": "$(refresh)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.openChange",
+        "title": {
+          "value": "打开更改",
+          "original": "Open Changes"
+        },
+        "category": "Git",
+        "icon": "$(compare-changes)"
+      },
+      {
+        "command": "git.openAllChanges",
+        "title": {
+          "value": "打开所有更改",
+          "original": "Open All Changes"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.openFile",
+        "title": {
+          "value": "打开文件",
+          "original": "Open File"
+        },
+        "category": "Git",
+        "icon": "$(go-to-file)"
+      },
+      {
+        "command": "git.openFile2",
+        "title": {
+          "value": "打开文件",
+          "original": "Open File"
+        },
+        "category": "Git",
+        "icon": "$(go-to-file)"
+      },
+      {
+        "command": "git.openHEADFile",
+        "title": {
+          "value": "打开文件 (HEAD)",
+          "original": "Open File (HEAD)"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.stage",
+        "title": {
+          "value": "暂存更改",
+          "original": "Stage Changes"
+        },
+        "category": "Git",
+        "icon": "$(add)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stageAll",
+        "title": {
+          "value": "暂存所有更改",
+          "original": "Stage All Changes"
+        },
+        "category": "Git",
+        "icon": "$(add)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stageAllTracked",
+        "title": {
+          "value": "暂存所有跟踪的更改",
+          "original": "Stage All Tracked Changes"
+        },
+        "category": "Git",
+        "icon": "$(add)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stageAllUntracked",
+        "title": {
+          "value": "暂存所有未跟踪的更改",
+          "original": "Stage All Untracked Changes"
+        },
+        "category": "Git",
+        "icon": "$(add)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stageAllMerge",
+        "title": {
+          "value": "暂存所有合并更改",
+          "original": "Stage All Merge Changes"
+        },
+        "category": "Git",
+        "icon": "$(add)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stageSelectedRanges",
+        "title": {
+          "value": "暂存所选范围",
+          "original": "Stage Selected Ranges"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.revertSelectedRanges",
+        "title": {
+          "value": "还原所选更改",
+          "original": "Revert Selected Ranges"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stageChange",
+        "title": {
+          "value": "暂存更改",
+          "original": "Stage Change"
+        },
+        "category": "Git",
+        "icon": "$(add)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.revertChange",
+        "title": {
+          "value": "还原更改",
+          "original": "Revert Change"
+        },
+        "category": "Git",
+        "icon": "$(discard)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.unstage",
+        "title": {
+          "value": "取消暂存更改",
+          "original": "Unstage Changes"
+        },
+        "category": "Git",
+        "icon": "$(remove)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.unstageAll",
+        "title": {
+          "value": "取消暂存所有更改",
+          "original": "Unstage All Changes"
+        },
+        "category": "Git",
+        "icon": "$(remove)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.unstageSelectedRanges",
+        "title": {
+          "value": "取消暂存所选范围",
+          "original": "Unstage Selected Ranges"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.clean",
+        "title": {
+          "value": "放弃更改",
+          "original": "Discard Changes"
+        },
+        "category": "Git",
+        "icon": "$(discard)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.cleanAll",
+        "title": {
+          "value": "放弃所有更改",
+          "original": "Discard All Changes"
+        },
+        "category": "Git",
+        "icon": "$(discard)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.cleanAllTracked",
+        "title": {
+          "value": "放弃所有跟踪的更改",
+          "original": "Discard All Tracked Changes"
+        },
+        "category": "Git",
+        "icon": "$(discard)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.cleanAllUntracked",
+        "title": {
+          "value": "放弃所有未跟踪的更改",
+          "original": "Discard All Untracked Changes"
+        },
+        "category": "Git",
+        "icon": "$(discard)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.rename",
+        "title": {
+          "value": "重命名",
+          "original": "Rename"
+        },
+        "category": "Git",
+        "icon": "$(discard)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commit",
+        "title": {
+          "value": "提交",
+          "original": "Commit"
+        },
+        "category": "Git",
+        "icon": "$(check)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitAmend",
+        "title": {
+          "value": "提交(修改)",
+          "original": "Commit (Amend)"
+        },
+        "category": "Git",
+        "icon": "$(check)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitSigned",
+        "title": {
+          "value": "提交(已签收)",
+          "original": "Commit (Signed Off)"
+        },
+        "category": "Git",
+        "icon": "$(check)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitStaged",
+        "title": {
+          "value": "提交已暂存文件",
+          "original": "Commit Staged"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitEmpty",
+        "title": {
+          "value": "创建空提交",
+          "original": "Commit Empty"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitStagedSigned",
+        "title": {
+          "value": "提交已暂存文件(已署名)",
+          "original": "Commit Staged (Signed Off)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitStagedAmend",
+        "title": {
+          "value": "提交已暂存文件(修改)",
+          "original": "Commit Staged (Amend)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitAll",
+        "title": {
+          "value": "全部提交",
+          "original": "Commit All"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitAllSigned",
+        "title": {
+          "value": "全部提交(已署名)",
+          "original": "Commit All (Signed Off)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitAllAmend",
+        "title": {
+          "value": "全部提交(修改)",
+          "original": "Commit All (Amend)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitNoVerify",
+        "title": {
+          "value": "提交(不验证)",
+          "original": "Commit (No Verify)"
+        },
+        "category": "Git",
+        "icon": "$(check)",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitStagedNoVerify",
+        "title": {
+          "value": "提交已暂存内容(不验证)",
+          "original": "Commit Staged (No Verify)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitEmptyNoVerify",
+        "title": {
+          "value": "空提交(不验证)",
+          "original": "Commit Empty (No Verify)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitStagedSignedNoVerify",
+        "title": {
+          "value": "提交已暂存内容(已签收，不验证)",
+          "original": "Commit Staged (Signed Off, No Verify)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitAmendNoVerify",
+        "title": {
+          "value": "提交(修改，不验证)",
+          "original": "Commit (Amend, No Verify)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitSignedNoVerify",
+        "title": {
+          "value": "提交(已签收，不验证)",
+          "original": "Commit (Signed Off, No Verify)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitStagedAmendNoVerify",
+        "title": {
+          "value": "提交已暂存内容(修正，不验证)",
+          "original": "Commit Staged (Amend, No Verify)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitAllNoVerify",
+        "title": {
+          "value": "全部提交(不验证)",
+          "original": "Commit All (No Verify)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitAllSignedNoVerify",
+        "title": {
+          "value": "全部提交(已签收，不验证)",
+          "original": "Commit All (Signed Off, No Verify)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitAllAmendNoVerify",
+        "title": {
+          "value": "全部提交(修正，不验证)",
+          "original": "Commit All (Amend, No Verify)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.commitMessageAccept",
+        "title": {
+          "value": "接受提交消息",
+          "original": "Accept Commit Message"
+        },
+        "icon": "$(check)",
+        "category": "Git"
+      },
+      {
+        "command": "git.commitMessageDiscard",
+        "title": {
+          "value": "放弃提交消息",
+          "original": "Discard Commit Message"
+        },
+        "icon": "$(discard)",
+        "category": "Git"
+      },
+      {
+        "command": "git.restoreCommitTemplate",
+        "title": {
+          "value": "还原提交模板",
+          "original": "Restore Commit Template"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.undoCommit",
+        "title": {
+          "value": "撤消上次提交",
+          "original": "Undo Last Commit"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.checkout",
+        "title": {
+          "value": "签出到...",
+          "original": "Checkout to..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.checkoutDetached",
+        "title": {
+          "value": "签出到(已分离)…",
+          "original": "Checkout to (Detached)..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.branch",
+        "title": {
+          "value": "创建分支...",
+          "original": "Create Branch..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.branchFrom",
+        "title": {
+          "value": "从现有来源创建新的分支...",
+          "original": "Create Branch From..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.deleteBranch",
+        "title": {
+          "value": "删除分支...",
+          "original": "Delete Branch..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.renameBranch",
+        "title": {
+          "value": "重命名分支...",
+          "original": "Rename Branch..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.merge",
+        "title": {
+          "value": "合并...",
+          "original": "Merge Branch..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.mergeAbort",
+        "title": {
+          "value": "中止合并",
+          "original": "Abort Merge"
+        },
+        "category": "Git",
+        "enablement": "gitMergeInProgress"
+      },
+      {
+        "command": "git.rebase",
+        "title": {
+          "value": "变基分支…",
+          "original": "Rebase Branch..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.createTag",
+        "title": {
+          "value": "创建标记",
+          "original": "Create Tag"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.deleteTag",
+        "title": {
+          "value": "删除标签...",
+          "original": "Delete Tag"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.deleteRemoteTag",
+        "title": {
+          "value": "删除远程标记...",
+          "original": "Delete Remote Tag"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.fetch",
+        "title": {
+          "value": "抓取",
+          "original": "Fetch"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.fetchPrune",
+        "title": {
+          "value": "获取 (删除)",
+          "original": "Fetch (Prune)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.fetchAll",
+        "title": {
+          "value": "从所有远程存储库中拉取",
+          "original": "Fetch From All Remotes"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.pull",
+        "title": {
+          "value": "拉取",
+          "original": "Pull"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.pullRebase",
+        "title": {
+          "value": "拉取(变基)",
+          "original": "Pull (Rebase)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.pullFrom",
+        "title": {
+          "value": "拉取自...",
+          "original": "Pull from..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.push",
+        "title": {
+          "value": "推送",
+          "original": "Push"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.pushForce",
+        "title": {
+          "value": "推送(强制)",
+          "original": "Push (Force)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.pushTo",
+        "title": {
+          "value": "推送到...",
+          "original": "Push to..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.pushToForce",
+        "title": {
+          "value": "推送到...(强制)",
+          "original": "Push to... (Force)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.pushTags",
+        "title": {
+          "value": "推送标记",
+          "original": "Push Tags"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.pushWithTags",
+        "title": {
+          "value": "推送(“关注”标记)",
+          "original": "Push (Follow Tags)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.pushWithTagsForce",
+        "title": {
+          "value": "推送(“关注”标记，强制)",
+          "original": "Push (Follow Tags, Force)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.cherryPick",
+        "title": {
+          "value": "挑拣…",
+          "original": "Cherry Pick..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.addRemote",
+        "title": {
+          "value": "添加远程存储库…",
+          "original": "Add Remote..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.removeRemote",
+        "title": {
+          "value": "删除远程存储库",
+          "original": "Remove Remote"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.sync",
+        "title": {
+          "value": "同步",
+          "original": "Sync"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.syncRebase",
+        "title": {
+          "value": "同步(变基)",
+          "original": "Sync (Rebase)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.publish",
+        "title": {
+          "value": "发布分支...",
+          "original": "Publish Branch..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.showOutput",
+        "title": {
+          "value": "显示 GIT 输出",
+          "original": "Show Git Output"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.ignore",
+        "title": {
+          "value": "添加到 .gitignore",
+          "original": "Add to .gitignore"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.revealInExplorer",
+        "title": {
+          "value": "在资源管理器视图中显示",
+          "original": "Reveal in Explorer View"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.revealFileInOS.linux",
+        "title": {
+          "value": "打开包含的文件夹",
+          "original": "Open Containing Folder"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.revealFileInOS.mac",
+        "title": {
+          "value": "在查找器中显示",
+          "original": "Reveal in Finder"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.revealFileInOS.windows",
+        "title": {
+          "value": "在文件资源管理器中显示",
+          "original": "Reveal in File Explorer"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.stashIncludeUntracked",
+        "title": {
+          "value": "储藏(包含未跟踪)",
+          "original": "Stash (Include Untracked)"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stash",
+        "title": {
+          "value": "储藏",
+          "original": "Stash"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stashStaged",
+        "title": {
+          "value": "储藏暂存",
+          "original": "Stash Staged"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress && gitVersion2.35"
+      },
+      {
+        "command": "git.stashPop",
+        "title": {
+          "value": "弹出储藏...",
+          "original": "Pop Stash..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stashPopLatest",
+        "title": {
+          "value": "弹出最新储藏",
+          "original": "Pop Latest Stash"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stashApply",
+        "title": {
+          "value": "应用储藏...",
+          "original": "Apply Stash..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stashApplyLatest",
+        "title": {
+          "value": "应用最新储藏",
+          "original": "Apply Latest Stash"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stashDrop",
+        "title": {
+          "value": "删除储藏...",
+          "original": "Drop Stash..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.stashDropAll",
+        "title": {
+          "value": "删除所有储藏...",
+          "original": "Drop All Stashes..."
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.timeline.openDiff",
+        "title": {
+          "value": "打开更改",
+          "original": "Open Changes"
+        },
+        "icon": "$(compare-changes)",
+        "category": "Git"
+      },
+      {
+        "command": "git.timeline.copyCommitId",
+        "title": {
+          "value": "复制提交 ID",
+          "original": "Copy Commit ID"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.timeline.copyCommitMessage",
+        "title": {
+          "value": "复制提交消息",
+          "original": "Copy Commit Message"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.timeline.selectForCompare",
+        "title": {
+          "value": "选择以进行比较",
+          "original": "Select for Compare"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.timeline.compareWithSelected",
+        "title": {
+          "value": "与已选项目进行比较",
+          "original": "Compare with Selected"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.timeline.openCommit",
+        "title": "Open Commit",
+        "icon": "$(diff-multiple)",
+        "category": "Git"
+      },
+      {
+        "command": "git.rebaseAbort",
+        "title": {
+          "value": "中止变基",
+          "original": "Abort Rebase"
+        },
+        "category": "Git",
+        "enablement": "gitRebaseInProgress"
+      },
+      {
+        "command": "git.closeAllDiffEditors",
+        "title": {
+          "value": "关闭所有差异编辑器",
+          "original": "Close All Diff Editors"
+        },
+        "category": "Git",
+        "enablement": "!operationInProgress"
+      },
+      {
+        "command": "git.api.getRepositories",
+        "title": {
+          "value": "获取存储库",
+          "original": "Get Repositories"
+        },
+        "category": "Git API"
+      },
+      {
+        "command": "git.api.getRepositoryState",
+        "title": {
+          "value": "获取仓库状态",
+          "original": "Get Repository State"
+        },
+        "category": "Git API"
+      },
+      {
+        "command": "git.api.getRemoteSources",
+        "title": {
+          "value": "获取远程源",
+          "original": "Get Remote Sources"
+        },
+        "category": "Git API"
+      },
+      {
+        "command": "git.acceptMerge",
+        "title": {
+          "value": "完成合并",
+          "original": "Complete Merge"
+        },
+        "category": "Git",
+        "enablement": "isMergeEditor && mergeEditorResultUri in git.mergeChanges"
+      },
+      {
+        "command": "git.openMergeEditor",
+        "title": {
+          "value": "在合并编辑器中解析",
+          "original": "Resolve in Merge Editor"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.runGitMerge",
+        "title": {
+          "value": "计算与 Git 冲突",
+          "original": "Compute Conflicts With Git"
+        },
+        "category": "Git",
+        "enablement": "isMergeEditor"
+      },
+      {
+        "command": "git.runGitMergeDiff3",
+        "title": {
+          "value": "计算与 Git 冲突(Diff3)",
+          "original": "Compute Conflicts With Git (Diff3)"
+        },
+        "category": "Git",
+        "enablement": "isMergeEditor"
+      },
+      {
+        "command": "git.manageUnsafeRepositories",
+        "title": {
+          "value": "管理不安全的存储库",
+          "original": "Manage Unsafe Repositories"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.openRepositoriesInParentFolders",
+        "title": {
+          "value": "在父文件夹中打开存储库",
+          "original": "Open Repositories In Parent Folders"
+        },
+        "category": "Git"
+      },
+      {
+        "command": "git.viewChanges",
+        "title": "View Changes",
+        "icon": "$(diff-multiple)",
+        "category": "Git"
+      },
+      {
+        "command": "git.viewStagedChanges",
+        "title": "View Staged Changes",
+        "icon": "$(diff-multiple)",
+        "category": "Git"
+      }
+    ]
+  },
+  "vscode.git-base": {
+    "id": "vscode.git-base",
+    "name": "git-base",
+    "description": "Git 静态贡献和选取器。",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "git-base.api.getRemoteSources",
+        "title": {
+          "value": "获取远程源",
+          "original": "Get Remote Sources"
+        },
+        "category": "Git Base API"
+      }
+    ]
+  },
+  "vscode.github": {
+    "id": "vscode.github",
+    "name": "github",
+    "description": "适用于 VS Code 的 GitHub 功能",
+    "version": "0.0.1",
+    "commands": [
+      {
+        "command": "github.publish",
+        "title": "Publish to GitHub"
+      },
+      {
+        "command": "github.copyVscodeDevLink",
+        "title": "Copy vscode.dev Link"
+      },
+      {
+        "command": "github.copyVscodeDevLinkFile",
+        "title": "Copy vscode.dev Link"
+      },
+      {
+        "command": "github.copyVscodeDevLinkWithoutRange",
+        "title": "Copy vscode.dev Link"
+      },
+      {
+        "command": "github.openOnVscodeDev",
+        "title": "Open in vscode.dev",
+        "icon": "$(globe)"
+      }
+    ]
+  },
+  "vscode.github-authentication": {
+    "id": "vscode.github-authentication",
+    "name": "github-authentication",
+    "description": "GitHub 身份验证提供程序",
+    "version": "0.0.2"
+  },
+  "vscode.go": {
+    "id": "vscode.go",
+    "name": "go",
+    "description": "在 Go 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.groovy": {
+    "id": "vscode.groovy",
+    "name": "groovy",
+    "description": "在 Groovy 文件中提供代码片段、语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.grunt": {
+    "id": "vscode.grunt",
+    "name": "grunt",
+    "description": "Extension to add Grunt capabilities to VS Code.",
+    "version": "1.0.0"
+  },
+  "vscode.gulp": {
+    "id": "vscode.gulp",
+    "name": "gulp",
+    "description": "向 VSCode 提供 Gulp 功能的扩展。",
+    "version": "1.0.0"
+  },
+  "vscode.handlebars": {
+    "id": "vscode.handlebars",
+    "name": "handlebars",
+    "description": "在 Handlebars 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.hlsl": {
+    "id": "vscode.hlsl",
+    "name": "hlsl",
+    "description": "在 HLSL 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.html": {
+    "id": "vscode.html",
+    "name": "html",
+    "description": "在 HTML 文件中提供语法突出显示、括号匹配和片段。",
+    "version": "1.0.0"
+  },
+  "vscode.html-language-features": {
+    "id": "vscode.html-language-features",
+    "name": "html-language-features",
+    "description": "为 HTML 和 Handlebar 文件提供丰富的语言支持",
+    "version": "1.0.0"
+  },
+  "vscode.ini": {
+    "id": "vscode.ini",
+    "name": "ini",
+    "description": "在 Ini 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.ipynb": {
+    "id": "vscode.ipynb",
+    "name": "ipynb",
+    "description": "为打开和读取 Jupyter 的 .ipynb 笔记本文件提供基本支持",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "ipynb.newUntitledIpynb",
+        "title": {
+          "value": "新 Jupyter Notebook",
+          "original": "New Jupyter Notebook"
+        },
+        "shortTitle": "Jupyter Notebook",
+        "category": "Create"
+      },
+      {
+        "command": "ipynb.openIpynbInNotebookEditor",
+        "title": {
+          "value": "在笔记本编辑器中打开 IPYNB 文件",
+          "original": "Open IPYNB File In Notebook Editor"
+        }
+      },
+      {
+        "command": "ipynb.cleanInvalidImageAttachment",
+        "title": {
+          "value": "清理无效图像附件引用",
+          "original": "Clean Invalid Image Attachment Reference"
+        }
+      },
+      {
+        "command": "notebook.cellOutput.copy",
+        "title": {
+          "value": "复制输出",
+          "original": "Copy Output"
+        }
+      }
+    ]
+  },
+  "vscode.jake": {
+    "id": "vscode.jake",
+    "name": "jake",
+    "description": "向 VS Code 提供 Jake 功能的扩展。",
+    "version": "1.0.0"
+  },
+  "vscode.java": {
+    "id": "vscode.java",
+    "name": "java",
+    "description": "在 Java 文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.javascript": {
+    "id": "vscode.javascript",
+    "name": "javascript",
+    "description": "在 JavaScript 文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.json": {
+    "id": "vscode.json",
+    "name": "json",
+    "description": "在 JSON 文件中提供语法突出显示和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.json-language-features": {
+    "id": "vscode.json-language-features",
+    "name": "json-language-features",
+    "description": "为 JSON 文件提供丰富的语言支持",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "json.clearCache",
+        "title": {
+          "value": "清除架构缓存",
+          "original": "Clear Schema Cache"
+        },
+        "category": "JSON"
+      },
+      {
+        "command": "json.sort",
+        "title": {
+          "value": "排序文档",
+          "original": "Sort Document"
+        },
+        "category": "JSON"
+      }
+    ]
+  },
+  "vscode.julia": {
+    "id": "vscode.julia",
+    "name": "julia",
+    "description": "在 Julia 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.latex": {
+    "id": "vscode.latex",
+    "name": "latex",
+    "description": "为 TeX、LaTeX 和 BibTeX 提供语法突出显示和括号匹配。",
+    "version": "1.0.0"
+  },
+  "vscode.less": {
+    "id": "vscode.less",
+    "name": "less",
+    "description": "在 Less 文件中提供语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.log": {
+    "id": "vscode.log",
+    "name": "log",
+    "description": "为扩展名为 .log 的文件提供语法高亮功能。",
+    "version": "1.0.0"
+  },
+  "vscode.lua": {
+    "id": "vscode.lua",
+    "name": "lua",
+    "description": "在 Lua 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.make": {
+    "id": "vscode.make",
+    "name": "make",
+    "description": "在 Make 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.markdown": {
+    "id": "vscode.markdown",
+    "name": "markdown",
+    "description": "在 Markdown 文件中提供代码片段和语法高亮功能。",
+    "version": "1.0.0"
+  },
+  "vscode.markdown-language-features": {
+    "id": "vscode.markdown-language-features",
+    "name": "markdown-language-features",
+    "description": "为 Markdown 提供丰富的语言支持。",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "_markdown.copyImage",
+        "title": {
+          "value": "复制图像",
+          "original": "Copy Image"
+        },
+        "category": "Markdown"
+      },
+      {
+        "command": "markdown.showPreview",
+        "title": {
+          "value": "打开预览",
+          "original": "Open Preview"
+        },
+        "category": "Markdown",
+        "icon": {
+          "light": "./media/preview-light.svg",
+          "dark": "./media/preview-dark.svg"
+        }
+      },
+      {
+        "command": "markdown.showPreviewToSide",
+        "title": {
+          "value": "打开侧边预览",
+          "original": "Open Preview to the Side"
+        },
+        "category": "Markdown",
+        "icon": "$(open-preview)"
+      },
+      {
+        "command": "markdown.showLockedPreviewToSide",
+        "title": {
+          "value": "在侧边打开锁定的预览",
+          "original": "Open Locked Preview to the Side"
+        },
+        "category": "Markdown",
+        "icon": "$(open-preview)"
+      },
+      {
+        "command": "markdown.showSource",
+        "title": {
+          "value": "显示源",
+          "original": "Show Source"
+        },
+        "category": "Markdown",
+        "icon": "$(go-to-file)"
+      },
+      {
+        "command": "markdown.showPreviewSecuritySelector",
+        "title": {
+          "value": "更改预览安全设置",
+          "original": "Change Preview Security Settings"
+        },
+        "category": "Markdown"
+      },
+      {
+        "command": "markdown.preview.refresh",
+        "title": {
+          "value": "刷新预览",
+          "original": "Refresh Preview"
+        },
+        "category": "Markdown"
+      },
+      {
+        "command": "markdown.preview.toggleLock",
+        "title": {
+          "value": "切换开关锁定预览",
+          "original": "Toggle Preview Locking"
+        },
+        "category": "Markdown"
+      },
+      {
+        "command": "markdown.findAllFileReferences",
+        "title": {
+          "value": "查找文件引用",
+          "original": "Find File References"
+        },
+        "category": "Markdown"
+      },
+      {
+        "command": "markdown.editor.insertLinkFromWorkspace",
+        "title": {
+          "value": "在工作区中插入文件链接",
+          "original": "Insert Link to File in Workspace"
+        },
+        "category": "Markdown",
+        "enablement": "editorLangId == markdown && !activeEditorIsReadonly"
+      },
+      {
+        "command": "markdown.editor.insertImageFromWorkspace",
+        "title": {
+          "value": "从工作区插入映像",
+          "original": "Insert Image from Workspace"
+        },
+        "category": "Markdown",
+        "enablement": "editorLangId == markdown && !activeEditorIsReadonly"
+      }
+    ]
+  },
+  "vscode.markdown-math": {
+    "id": "vscode.markdown-math",
+    "name": "markdown-math",
+    "description": "在笔记本中向 Markdown 添加数学支持。",
+    "version": "1.0.0"
+  },
+  "vscode.media-preview": {
+    "id": "vscode.media-preview",
+    "name": "media-preview",
+    "description": "为图像、音频和视频提供 VS Code 的内置预览",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "imagePreview.zoomIn",
+        "title": {
+          "value": "放大",
+          "original": "Zoom in"
+        },
+        "category": "Image Preview"
+      },
+      {
+        "command": "imagePreview.zoomOut",
+        "title": {
+          "value": "缩小",
+          "original": "Zoom out"
+        },
+        "category": "Image Preview"
+      },
+      {
+        "command": "imagePreview.copyImage",
+        "title": {
+          "value": "复制",
+          "original": "Copy"
+        },
+        "category": "Image Preview"
+      }
+    ]
+  },
+  "vscode.merge-conflict": {
+    "id": "vscode.merge-conflict",
+    "name": "merge-conflict",
+    "description": "为内联合并冲突提供高亮和命令。",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "全部采用当前内容",
+          "original": "Accept All Current"
+        },
+        "original": "Accept All Current",
+        "command": "merge-conflict.accept.all-current",
+        "enablement": "!isMergeEditor"
+      },
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "全部采用传入版本",
+          "original": "Accept All Incoming"
+        },
+        "original": "Accept All Incoming",
+        "command": "merge-conflict.accept.all-incoming",
+        "enablement": "!isMergeEditor"
+      },
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "全部保留两者",
+          "original": "Accept All Both"
+        },
+        "original": "Accept All Both",
+        "command": "merge-conflict.accept.all-both",
+        "enablement": "!isMergeEditor"
+      },
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "采用当前内容",
+          "original": "Accept Current"
+        },
+        "original": "Accept Current",
+        "command": "merge-conflict.accept.current",
+        "enablement": "!isMergeEditor"
+      },
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "采用传入内容",
+          "original": "Accept Incoming"
+        },
+        "original": "Accept Incoming",
+        "command": "merge-conflict.accept.incoming",
+        "enablement": "!isMergeEditor"
+      },
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "采用选中版本",
+          "original": "Accept Selection"
+        },
+        "original": "Accept Selection",
+        "command": "merge-conflict.accept.selection",
+        "enablement": "!isMergeEditor"
+      },
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "保留两者",
+          "original": "Accept Both"
+        },
+        "original": "Accept Both",
+        "command": "merge-conflict.accept.both",
+        "enablement": "!isMergeEditor"
+      },
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "下一个冲突",
+          "original": "Next Conflict"
+        },
+        "original": "Next Conflict",
+        "command": "merge-conflict.next",
+        "enablement": "!isMergeEditor",
+        "icon": "$(arrow-down)"
+      },
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "上一个冲突",
+          "original": "Previous Conflict"
+        },
+        "original": "Previous Conflict",
+        "command": "merge-conflict.previous",
+        "enablement": "!isMergeEditor",
+        "icon": "$(arrow-up)"
+      },
+      {
+        "category": {
+          "value": "合并冲突",
+          "original": "Merge Conflict"
+        },
+        "title": {
+          "value": "比较当前冲突",
+          "original": "Compare Current Conflict"
+        },
+        "original": "Compare Current Conflict",
+        "command": "merge-conflict.compare",
+        "enablement": "!isMergeEditor"
+      }
+    ]
+  },
+  "vscode.microsoft-authentication": {
+    "id": "vscode.microsoft-authentication",
+    "name": "microsoft-authentication",
+    "description": "Microsoft 身份验证提供程序",
+    "version": "0.0.1"
+  },
+  "ms-vscode.js-debug": {
+    "id": "ms-vscode.js-debug",
+    "name": "js-debug",
+    "description": "An extension for debugging Node.js programs and Chrome.",
+    "version": "1.85.0",
+    "commands": [
+      {
+        "command": "extension.js-debug.prettyPrint",
+        "title": {
+          "value": "用于调试的美观格式打印",
+          "original": "Pretty print for debugging"
+        },
+        "category": "Debug",
+        "icon": "$(json)"
+      },
+      {
+        "command": "extension.js-debug.toggleSkippingFile",
+        "title": {
+          "value": "跳过此文件的开关",
+          "original": "Toggle Skipping this File"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.addCustomBreakpoints",
+        "title": {
+          "value": "切换事件侦听器断点",
+          "original": "Toggle Event Listener Breakpoints"
+        },
+        "icon": "$(add)"
+      },
+      {
+        "command": "extension.js-debug.removeAllCustomBreakpoints",
+        "title": {
+          "value": "移除所有事件侦听器断点",
+          "original": "Remove All Event Listener Breakpoints"
+        },
+        "icon": "$(close-all)"
+      },
+      {
+        "command": "extension.js-debug.addXHRBreakpoints",
+        "title": {
+          "value": "添加 XHR/提取断点",
+          "original": "Add XHR/fetch Breakpoint"
+        },
+        "icon": "$(add)"
+      },
+      {
+        "command": "extension.js-debug.removeXHRBreakpoint",
+        "title": {
+          "value": "删除 XHR/提取断点",
+          "original": "Remove XHR/fetch Breakpoint"
+        },
+        "icon": "$(remove)"
+      },
+      {
+        "command": "extension.js-debug.editXHRBreakpoints",
+        "title": {
+          "value": "编辑 XHR/提取断点",
+          "original": "Edit XHR/fetch Breakpoint"
+        },
+        "icon": "$(edit)"
+      },
+      {
+        "command": "extension.pwa-node-debug.attachNodeProcess",
+        "title": {
+          "value": "附加到 Node 进程",
+          "original": "Attach to Node Process"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.npmScript",
+        "title": {
+          "value": "调试 npm 脚本",
+          "original": "Debug npm Script"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.createDebuggerTerminal",
+        "title": {
+          "value": "JavaScript 调试终端",
+          "original": "JavaScript Debug Terminal"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.startProfile",
+        "title": {
+          "value": "获取性能配置文件",
+          "original": "Take Performance Profile"
+        },
+        "category": "Debug",
+        "icon": "$(record)"
+      },
+      {
+        "command": "extension.js-debug.stopProfile",
+        "title": {
+          "value": "停止性能配置文件",
+          "original": "Stop Performance Profile"
+        },
+        "category": "Debug",
+        "icon": "resources/dark/stop-profiling.svg"
+      },
+      {
+        "command": "extension.js-debug.revealPage",
+        "title": {
+          "value": "焦点选项卡",
+          "original": "Focus Tab"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.debugLink",
+        "title": {
+          "value": "打开链接",
+          "original": "Open Link"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.createDiagnostics",
+        "title": {
+          "value": "诊断断点问题",
+          "original": "Diagnose Breakpoint Problems"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.getDiagnosticLogs",
+        "title": {
+          "value": "保存诊断 JS 调试日志",
+          "original": "Save Diagnostic JS Debug Logs"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.node-debug.startWithStopOnEntry",
+        "title": {
+          "value": "开始调试并在输入时停止",
+          "original": "Start Debugging and Stop on Entry"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.openEdgeDevTools",
+        "title": {
+          "value": "打开浏览器开发工具",
+          "original": "Open Browser Devtools"
+        },
+        "icon": "$(inspect)",
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.callers.add",
+        "title": {
+          "value": "排除调用方",
+          "original": "Exclude Caller"
+        },
+        "category": "Debug"
+      },
+      {
+        "command": "extension.js-debug.callers.remove",
+        "title": {
+          "value": "移除排除的调用方",
+          "original": "Remove excluded caller"
+        },
+        "icon": "$(close)"
+      },
+      {
+        "command": "extension.js-debug.callers.removeAll",
+        "title": {
+          "value": "删除所有排除的调用方",
+          "original": "Remove all excluded callers"
+        },
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "extension.js-debug.callers.goToCaller",
+        "title": {
+          "value": "转到调用方位置",
+          "original": "Go to caller location"
+        },
+        "icon": "$(call-outgoing)"
+      },
+      {
+        "command": "extension.js-debug.callers.gotToTarget",
+        "title": {
+          "value": "转到目标位置",
+          "original": "Go to target location"
+        },
+        "icon": "$(call-incoming)"
+      },
+      {
+        "command": "extension.js-debug.enableSourceMapStepping",
+        "title": {
+          "value": "启用源映射单步执行",
+          "original": "Enable Source Mapped Stepping"
+        },
+        "icon": "$(compass-dot)"
+      },
+      {
+        "command": "extension.js-debug.disableSourceMapStepping",
+        "title": {
+          "value": "禁用源映射单步执行",
+          "original": "Disable Source Mapped Stepping"
+        },
+        "icon": "$(compass)"
+      }
+    ]
+  },
+  "ms-vscode.vscode-js-profile-table": {
+    "id": "ms-vscode.vscode-js-profile-table",
+    "name": "vscode-js-profile-table",
+    "description": "Text visualizer for profiles taken from the JavaScript debugger",
+    "version": "1.0.8",
+    "commands": [
+      {
+        "command": "extension.jsProfileVisualizer.table.clearCodeLenses",
+        "title": "Clear Profile Code Lenses"
+      }
+    ]
+  },
+  "vscode.builtin-notebook-renderers": {
+    "id": "vscode.builtin-notebook-renderers",
+    "name": "builtin-notebook-renderers",
+    "description": "为笔记本提供基本输出呈现器",
+    "version": "1.0.0"
+  },
+  "vscode.npm": {
+    "id": "vscode.npm",
+    "name": "npm",
+    "description": "为 npm 脚本提供任务支持的扩展。",
+    "version": "1.0.1",
+    "commands": [
+      {
+        "command": "npm.runScript",
+        "title": {
+          "value": "运行",
+          "original": "Run"
+        },
+        "icon": "$(run)"
+      },
+      {
+        "command": "npm.debugScript",
+        "title": {
+          "value": "调试",
+          "original": "Debug"
+        },
+        "icon": "$(debug)"
+      },
+      {
+        "command": "npm.openScript",
+        "title": {
+          "value": "打开",
+          "original": "Open"
+        }
+      },
+      {
+        "command": "npm.runInstall",
+        "title": {
+          "value": "运行 install",
+          "original": "Run Install"
+        }
+      },
+      {
+        "command": "npm.refresh",
+        "title": {
+          "value": "刷新",
+          "original": "Refresh"
+        },
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "npm.runSelectedScript",
+        "title": {
+          "value": "运行脚本",
+          "original": "Run Script"
+        }
+      },
+      {
+        "command": "npm.runScriptFromFolder",
+        "title": {
+          "value": "运行文件夹中的NPM脚本...",
+          "original": "Run NPM Script in Folder..."
+        }
+      },
+      {
+        "command": "npm.packageManager",
+        "title": {
+          "value": "获取已配置的包管理器",
+          "original": "Get Configured Package Manager"
+        }
+      }
+    ]
+  },
+  "vscode.objective-c": {
+    "id": "vscode.objective-c",
+    "name": "objective-c",
+    "description": "在 Objective-C 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.perl": {
+    "id": "vscode.perl",
+    "name": "perl",
+    "description": "在 Perl 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.php": {
+    "id": "vscode.php",
+    "name": "php",
+    "description": "为 PHP 文件提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.php-language-features": {
+    "id": "vscode.php-language-features",
+    "name": "php-language-features",
+    "description": "为 PHP 文件提供丰富的语言支持。",
+    "version": "1.0.0"
+  },
+  "vscode.powershell": {
+    "id": "vscode.powershell",
+    "name": "powershell",
+    "description": "在 Powershell 文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.pug": {
+    "id": "vscode.pug",
+    "name": "pug",
+    "description": "在 Pug 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.python": {
+    "id": "vscode.python",
+    "name": "python",
+    "description": "在 Python 文件中提供语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.r": {
+    "id": "vscode.r",
+    "name": "r",
+    "description": "在 R 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.razor": {
+    "id": "vscode.razor",
+    "name": "razor",
+    "description": "在 Razor 文件中提供语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.references-view": {
+    "id": "vscode.references-view",
+    "name": "references-view",
+    "description": "在边栏中以独立稳定的视图引用搜索结果",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "references-view.findReferences",
+        "title": {
+          "value": "查找所有引用",
+          "original": "Find All References"
+        },
+        "category": {
+          "value": "引用",
+          "original": "References"
+        }
+      },
+      {
+        "command": "references-view.findImplementations",
+        "title": {
+          "value": "查找所有实现",
+          "original": "Find All Implementations"
+        },
+        "category": {
+          "value": "引用",
+          "original": "References"
+        }
+      },
+      {
+        "command": "references-view.clearHistory",
+        "title": {
+          "value": "清除历史记录",
+          "original": "Clear History"
+        },
+        "category": {
+          "value": "引用",
+          "original": "References"
+        },
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "references-view.clear",
+        "title": {
+          "value": "清除",
+          "original": "Clear"
+        },
+        "category": {
+          "value": "引用",
+          "original": "References"
+        },
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "references-view.refresh",
+        "title": {
+          "value": "刷新",
+          "original": "Refresh"
+        },
+        "category": {
+          "value": "引用",
+          "original": "References"
+        },
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "references-view.pickFromHistory",
+        "title": {
+          "value": "显示历史记录",
+          "original": "Show History"
+        },
+        "category": {
+          "value": "引用",
+          "original": "References"
+        }
+      },
+      {
+        "command": "references-view.removeReferenceItem",
+        "title": {
+          "value": "关闭",
+          "original": "Dismiss"
+        },
+        "icon": "$(close)"
+      },
+      {
+        "command": "references-view.copy",
+        "title": {
+          "value": "复制",
+          "original": "Copy"
+        }
+      },
+      {
+        "command": "references-view.copyAll",
+        "title": {
+          "value": "全部复制",
+          "original": "Copy All"
+        }
+      },
+      {
+        "command": "references-view.copyPath",
+        "title": {
+          "value": "复制路径",
+          "original": "Copy Path"
+        }
+      },
+      {
+        "command": "references-view.refind",
+        "title": {
+          "value": "重新运行",
+          "original": "Rerun"
+        },
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "references-view.showCallHierarchy",
+        "title": {
+          "value": "显示调用层次结构",
+          "original": "Show Call Hierarchy"
+        },
+        "category": "Calls"
+      },
+      {
+        "command": "references-view.showOutgoingCalls",
+        "title": {
+          "value": "显示传出调用",
+          "original": "Show Outgoing Calls"
+        },
+        "category": "Calls",
+        "icon": "$(call-outgoing)"
+      },
+      {
+        "command": "references-view.showIncomingCalls",
+        "title": {
+          "value": "显示传入调用",
+          "original": "Show Incoming Calls"
+        },
+        "category": "Calls",
+        "icon": "$(call-incoming)"
+      },
+      {
+        "command": "references-view.removeCallItem",
+        "title": {
+          "value": "取消",
+          "original": "Dismiss"
+        },
+        "icon": "$(close)"
+      },
+      {
+        "command": "references-view.next",
+        "title": {
+          "value": "转到下一个引用",
+          "original": "Go to Next Reference"
+        },
+        "enablement": "references-view.canNavigate"
+      },
+      {
+        "command": "references-view.prev",
+        "title": {
+          "value": "转到上一个参考",
+          "original": "Go to Previous Reference"
+        },
+        "enablement": "references-view.canNavigate"
+      },
+      {
+        "command": "references-view.showTypeHierarchy",
+        "title": {
+          "value": "显示类型层次结构",
+          "original": "Show Type Hierarchy"
+        },
+        "category": "Types"
+      },
+      {
+        "command": "references-view.showSupertypes",
+        "title": {
+          "value": "显示超类型",
+          "original": "Show Supertypes"
+        },
+        "category": "Types",
+        "icon": "$(type-hierarchy-super)"
+      },
+      {
+        "command": "references-view.showSubtypes",
+        "title": {
+          "value": "显示子类型",
+          "original": "Show Subtypes"
+        },
+        "category": "Types",
+        "icon": "$(type-hierarchy-sub)"
+      },
+      {
+        "command": "references-view.removeTypeItem",
+        "title": {
+          "value": "关闭",
+          "original": "Dismiss"
+        },
+        "icon": "$(close)"
+      }
+    ]
+  },
+  "vscode.restructuredtext": {
+    "id": "vscode.restructuredtext",
+    "name": "restructuredtext",
+    "description": "在 reStructuredText 文件中提供语法突出显示。",
+    "version": "1.0.0"
+  },
+  "vscode.ruby": {
+    "id": "vscode.ruby",
+    "name": "ruby",
+    "description": "在 Ruby 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.rust": {
+    "id": "vscode.rust",
+    "name": "rust",
+    "description": "在 Rust 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.scss": {
+    "id": "vscode.scss",
+    "name": "scss",
+    "description": "在 SCSS 文件中提供语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.search-result": {
+    "id": "vscode.search-result",
+    "name": "search-result",
+    "description": "为选项卡搜索结果中提供语法突出显示和语言功能。",
+    "version": "1.0.0"
+  },
+  "vscode.shaderlab": {
+    "id": "vscode.shaderlab",
+    "name": "shaderlab",
+    "description": "在 Shaderlab 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.shellscript": {
+    "id": "vscode.shellscript",
+    "name": "shellscript",
+    "description": "在 Shell 脚本文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.simple-browser": {
+    "id": "vscode.simple-browser",
+    "name": "simple-browser",
+    "description": "一个非常基本的内置 Web 视图，用于显示 Web 内容。",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "simpleBrowser.show",
+        "title": "Show",
+        "category": "Simple Browser"
+      }
+    ]
+  },
+  "vscode.sql": {
+    "id": "vscode.sql",
+    "name": "sql",
+    "description": "在 SQL 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.swift": {
+    "id": "vscode.swift",
+    "name": "swift",
+    "description": "在 Swift 文件中提供代码片段、语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.theme-abyss": {
+    "id": "vscode.theme-abyss",
+    "name": "theme-abyss",
+    "description": "适用于 Visual Studio Code 的 Abyss 主题",
+    "version": "1.0.0"
+  },
+  "vscode.theme-defaults": {
+    "id": "vscode.theme-defaults",
+    "name": "theme-defaults",
+    "description": "默认 Visual Studio 浅色和深色主题",
+    "version": "1.0.0"
+  },
+  "vscode.theme-kimbie-dark": {
+    "id": "vscode.theme-kimbie-dark",
+    "name": "theme-kimbie-dark",
+    "description": "适用于 Visual Studio Code 的 Kimbie dark 主题",
+    "version": "1.0.0"
+  },
+  "vscode.theme-monokai": {
+    "id": "vscode.theme-monokai",
+    "name": "theme-monokai",
+    "description": "适用于 Visual Studio Code 的 Monokai 主题",
+    "version": "1.0.0"
+  },
+  "vscode.theme-monokai-dimmed": {
+    "id": "vscode.theme-monokai-dimmed",
+    "name": "theme-monokai-dimmed",
+    "description": "适用于 Visual Studio Code 的 Monokai dimmed 主题",
+    "version": "1.0.0"
+  },
+  "vscode.theme-quietlight": {
+    "id": "vscode.theme-quietlight",
+    "name": "theme-quietlight",
+    "description": "适用于 Visual Studio Code 的 Quiet light 主题",
+    "version": "1.0.0"
+  },
+  "vscode.theme-red": {
+    "id": "vscode.theme-red",
+    "name": "theme-red",
+    "description": "适用于 Visual Studio Code 的 Red 主题",
+    "version": "1.0.0"
+  },
+  "vscode.vscode-theme-seti": {
+    "id": "vscode.vscode-theme-seti",
+    "name": "vscode-theme-seti",
+    "description": "由 Seti UI 文件图标构成的文件图标主题",
+    "version": "1.0.0"
+  },
+  "vscode.theme-solarized-dark": {
+    "id": "vscode.theme-solarized-dark",
+    "name": "theme-solarized-dark",
+    "description": "适用于 Visual Studio Code 的 Solarized dark 主题",
+    "version": "1.0.0"
+  },
+  "vscode.theme-solarized-light": {
+    "id": "vscode.theme-solarized-light",
+    "name": "theme-solarized-light",
+    "description": "适用于 Visual Studio Code 的 Solarized light 主题",
+    "version": "1.0.0"
+  },
+  "vscode.theme-tomorrow-night-blue": {
+    "id": "vscode.theme-tomorrow-night-blue",
+    "name": "theme-tomorrow-night-blue",
+    "description": "适用于 Visual Studio Code 的 Tomorrow night blue 主题",
+    "version": "1.0.0"
+  },
+  "vscode.tunnel-forwarding": {
+    "id": "vscode.tunnel-forwarding",
+    "name": "tunnel-forwarding",
+    "description": "允许通过 Internet 访问转发本地端口。",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "category": {
+          "value": "端口转发",
+          "original": "Port Forwarding"
+        },
+        "command": "tunnel-forwarding.showLog",
+        "title": {
+          "value": "显示日志",
+          "original": "Show Log"
+        },
+        "enablement": "tunnelForwardingHasLog"
+      },
+      {
+        "category": {
+          "value": "端口转发",
+          "original": "Port Forwarding"
+        },
+        "command": "tunnel-forwarding.restart",
+        "title": {
+          "value": "重新启动转发系统",
+          "original": "Restart Forwarding System"
+        },
+        "enablement": "tunnelForwardingIsRunning"
+      }
+    ]
+  },
+  "vscode.typescript": {
+    "id": "vscode.typescript",
+    "name": "typescript",
+    "description": "在 TypeScript 文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.typescript-language-features": {
+    "id": "vscode.typescript-language-features",
+    "name": "typescript-language-features",
+    "description": "为 JavaScript 和 TypeScript 提供丰富的语言支持。",
+    "version": "1.0.0",
+    "commands": [
+      {
+        "command": "typescript.reloadProjects",
+        "title": {
+          "value": "重载项目",
+          "original": "Reload Project"
+        },
+        "category": "TypeScript"
+      },
+      {
+        "command": "javascript.reloadProjects",
+        "title": {
+          "value": "重载项目",
+          "original": "Reload Project"
+        },
+        "category": "JavaScript"
+      },
+      {
+        "command": "typescript.selectTypeScriptVersion",
+        "title": {
+          "value": "选择 TypeScript 版本...",
+          "original": "Select TypeScript Version..."
+        },
+        "category": "TypeScript"
+      },
+      {
+        "command": "typescript.goToProjectConfig",
+        "title": {
+          "value": "转到项目配置(tsconfig)",
+          "original": "Go to Project Configuration (tsconfig)"
+        },
+        "category": "TypeScript"
+      },
+      {
+        "command": "javascript.goToProjectConfig",
+        "title": {
+          "value": "转到项目配置(jsconfig/tsconfig)",
+          "original": "Go to Project Configuration (jsconfig / tsconfig)"
+        },
+        "category": "JavaScript"
+      },
+      {
+        "command": "typescript.openTsServerLog",
+        "title": {
+          "value": "打开 TS 服务器日志",
+          "original": "Open TS Server log"
+        },
+        "category": "TypeScript"
+      },
+      {
+        "command": "typescript.restartTsServer",
+        "title": {
+          "value": "重启 TS 服务器",
+          "original": "Restart TS Server"
+        },
+        "category": "TypeScript"
+      },
+      {
+        "command": "typescript.findAllFileReferences",
+        "title": {
+          "value": "查找文件引用",
+          "original": "Find File References"
+        },
+        "category": "TypeScript"
+      },
+      {
+        "command": "typescript.goToSourceDefinition",
+        "title": {
+          "value": "转到源定义",
+          "original": "Go to Source Definition"
+        },
+        "category": "TypeScript"
+      },
+      {
+        "command": "typescript.sortImports",
+        "title": {
+          "value": "对导入进行排序",
+          "original": "Sort Imports"
+        },
+        "category": "TypeScript"
+      },
+      {
+        "command": "javascript.sortImports",
+        "title": {
+          "value": "对导入进行排序",
+          "original": "Sort Imports"
+        },
+        "category": "JavaScript"
+      },
+      {
+        "command": "typescript.removeUnusedImports",
+        "title": {
+          "value": "删除未使用的导入",
+          "original": "Remove Unused Imports"
+        },
+        "category": "TypeScript"
+      },
+      {
+        "command": "javascript.removeUnusedImports",
+        "title": {
+          "value": "删除未使用的导入",
+          "original": "Remove Unused Imports"
+        },
+        "category": "JavaScript"
+      }
+    ]
+  },
+  "vscode.vb": {
+    "id": "vscode.vb",
+    "name": "vb",
+    "description": "在 Visual Basic 文件中提供代码片段、语法高亮、括号匹配和折叠功能。",
+    "version": "1.0.0"
+  },
+  "vscode.xml": {
+    "id": "vscode.xml",
+    "name": "xml",
+    "description": "在 XML 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "vscode.yaml": {
+    "id": "vscode.yaml",
+    "name": "yaml",
+    "description": "在 YAML 文件中提供语法高亮和括号匹配功能。",
+    "version": "1.0.0"
+  },
+  "alefragnani.Bookmarks": {
+    "id": "alefragnani.Bookmarks",
+    "name": "Bookmarks",
+    "description": "Mark lines and jump to them",
+    "version": "13.4.2",
+    "commands": [
+      {
+        "command": "bookmarks.toggle",
+        "title": {
+          "value": "开关",
+          "original": "Toggle"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "bookmarks.jumpToNext",
+        "title": {
+          "value": "跳至下一个",
+          "original": "Jump to Next"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "bookmarks.jumpToPrevious",
+        "title": {
+          "value": "跳至上一个",
+          "original": "Jump to Previous"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "_bookmarks.jumpTo",
+        "title": {
+          "value": "跳转至文档/行",
+          "original": "Jump to Document/Line"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "bookmarks.selectLines",
+        "title": {
+          "value": "选中的行",
+          "original": "Select Lines"
+        },
+        "category": {
+          "value": "书签（选择）",
+          "original": "Bookmarks (Selection)"
+        }
+      },
+      {
+        "command": "bookmarks.expandSelectionToNext",
+        "title": {
+          "value": "将选择展开到下一个",
+          "original": "Expand Selection to Next"
+        },
+        "category": {
+          "value": "书签（选择）",
+          "original": "Bookmarks (Selection)"
+        }
+      },
+      {
+        "command": "bookmarks.expandSelectionToPrevious",
+        "title": {
+          "value": "将选择展开到上一个",
+          "original": "Expand Selection to Previous"
+        },
+        "category": {
+          "value": "书签（选择）",
+          "original": "Bookmarks (Selection)"
+        }
+      },
+      {
+        "command": "bookmarks.shrinkSelection",
+        "title": {
+          "value": "收缩选择",
+          "original": "Shrink Selection"
+        },
+        "category": {
+          "value": "书签（选择）",
+          "original": "Bookmarks (Selection)"
+        }
+      },
+      {
+        "command": "bookmarks.list",
+        "title": {
+          "value": "列表",
+          "original": "List"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "bookmarks.toggleLabeled",
+        "title": {
+          "value": "含标签的开关",
+          "original": "Toggle Labeled"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "bookmarks.refresh",
+        "title": {
+          "value": "刷新",
+          "original": "Refresh"
+        },
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "_bookmarks.viewAsTree#sideBar",
+        "title": {
+          "value": "以树的形式查看",
+          "original": "View as Tree"
+        },
+        "icon": "$(list-tree)",
+        "enablement": "bookmarks.viewAsList"
+      },
+      {
+        "command": "_bookmarks.viewAsList#sideBar",
+        "title": {
+          "value": "以列表形式查看",
+          "original": "View as List"
+        },
+        "icon": "$(list-flat)",
+        "enablement": "!bookmarks.viewAsList"
+      },
+      {
+        "command": "bookmarks.openSettings",
+        "title": {
+          "value": "打开设置",
+          "original": "Open Settings"
+        }
+      },
+      {
+        "command": "_bookmarks.sidebar.hidePosition",
+        "title": {
+          "value": "隐藏位置",
+          "original": "Hide Position"
+        }
+      },
+      {
+        "command": "_bookmarks.sidebar.showPosition",
+        "title": {
+          "value": "显示位置",
+          "original": "Show Position"
+        }
+      },
+      {
+        "command": "bookmarks.clear",
+        "title": {
+          "value": "清空",
+          "original": "Clear"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "_bookmarks.clearFromFile",
+        "title": {
+          "value": "清空",
+          "original": "Clear"
+        },
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "_bookmarks.deleteBookmark",
+        "title": {
+          "value": "删除",
+          "original": "Delete"
+        },
+        "icon": "$(close)"
+      },
+      {
+        "command": "_bookmarks.editLabel",
+        "title": {
+          "value": "编辑标签",
+          "original": "Edit Label"
+        },
+        "icon": "$(edit)"
+      },
+      {
+        "command": "_bookmarks.addBookmarkAtLine#gutter",
+        "title": {
+          "value": "添加书签",
+          "original": "Add Bookmark"
+        }
+      },
+      {
+        "command": "_bookmarks.addLabeledBookmarkAtLine#gutter",
+        "title": {
+          "value": "添加标签书签",
+          "original": "Add Labeled Bookmark"
+        }
+      },
+      {
+        "command": "_bookmarks.removeBookmarkAtLine#gutter",
+        "title": {
+          "value": "删除书签",
+          "original": "Remove Bookmark"
+        }
+      },
+      {
+        "command": "bookmarks.listFromAllFiles",
+        "title": {
+          "value": "列出所有书签",
+          "original": "List from All Files"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "bookmarks.clearFromAllFiles",
+        "title": {
+          "value": "清空所有书签",
+          "original": "Clear from All Files"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "bookmarks.whatsNew",
+        "title": {
+          "value": "有什么新特性",
+          "original": "What's New"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "_bookmarks.whatsNewContextMenu",
+        "title": {
+          "value": "有什么新特性",
+          "original": "What's New"
+        }
+      },
+      {
+        "command": "_bookmarks.openFolderWelcome",
+        "title": {
+          "value": "打开文件夹",
+          "original": "Open Folder"
+        }
+      },
+      {
+        "command": "bookmarks.supportBookmarks",
+        "title": {
+          "value": "支持书签",
+          "original": "Support Bookmarks"
+        },
+        "category": {
+          "value": "书签",
+          "original": "Bookmarks"
+        }
+      },
+      {
+        "command": "_bookmarks.openSideBar",
+        "title": "Open Side Bar"
+      }
+    ]
+  },
+  "AMiner.codegeex": {
+    "id": "AMiner.codegeex",
+    "name": "codegeex",
+    "description": "CodeGeeX is an AI-based coding assistant, which can suggest code in the current or following lines.  It is powered by a large-scale multilingual code generation model with 13 billion parameters, pretrained on a large code corpus of more than 20 programming languages.",
+    "version": "2.6.1",
+    "commands": [
+      {
+        "command": "codegeex.login",
+        "title": {
+          "value": "CodeGeeX: 登录",
+          "original": "CodeGeeX: Login"
+        }
+      },
+      {
+        "command": "codegeex.disable-enable",
+        "title": {
+          "value": "CodeGeeX: 禁用或启用自动补全",
+          "original": "CodeGeeX: Disable or enable CodeGeeX"
+        }
+      },
+      {
+        "command": "codegeex.chat.focus",
+        "title": {
+          "value": "CodeGeeX: 聚焦到聊天框",
+          "original": "CodeGeeX: Focus Chat Input"
+        }
+      },
+      {
+        "command": "codegeex.review",
+        "title": {
+          "value": "使用 CodeGeeX 进行 Code Review",
+          "original": "Use CodeGeeX for Code Review"
+        },
+        "icon": "$(codegeex-dark)",
+        "enablement": "codegeex.canReview"
+      },
+      {
+        "command": "codegeex.expandInlineChat",
+        "title": "open chat"
+      },
+      {
+        "command": "codegeex.inlinechat.submit",
+        "title": "Submit"
+      },
+      {
+        "command": "codegeex.ask",
+        "title": {
+          "value": "CodeGeeX: 提交",
+          "original": "CodeGeeX: Submit"
+        },
+        "enablement": "!commentIsEmpty"
+      },
+      {
+        "command": "codegeex.askcodegeex.tests",
+        "title": {
+          "value": "生成单测",
+          "original": "Generate Tests"
+        }
+      },
+      {
+        "command": "codegeex.askcodegeex",
+        "title": {
+          "value": "向CodeGeeX提问",
+          "original": "Ask CodeGeeX"
+        }
+      },
+      {
+        "command": "codegeex.askcodegeex.explain",
+        "title": {
+          "value": "解释代码",
+          "original": "Explain Code"
+        }
+      },
+      {
+        "command": "codegeex.askcodegeex.comment",
+        "title": {
+          "value": "生成注释",
+          "original": "Generate Comment"
+        }
+      }
+    ]
+  },
+  "ArturoDent.command-alias": {
+    "id": "ArturoDent.command-alias",
+    "name": "command-alias",
+    "description": "Create aliases for built-in commands",
+    "version": "0.6.2",
+    "commands": [
+      {
+        "command": "command-alias.createAliases",
+        "title": "Create aliases from vscode's built-in commands",
+        "category": "Alias"
+      }
+    ]
+  },
+  "babakks.vscode-command-inspector": {
+    "id": "babakks.vscode-command-inspector",
+    "name": "vscode-command-inspector",
+    "description": "Inspect VS Code commands and invoke them from the command palette",
+    "version": "0.0.1",
+    "commands": [
+      {
+        "command": "vscode-command-inspector.dumpCommandsAsJSON",
+        "title": "Command Inspector: Dump commands (JSON)",
+        "shortTitle": "Dump commands (JSON)",
+        "icon": "$(json)"
+      },
+      {
+        "command": "vscode-command-inspector.dumpExtensionCommandsAsJSON",
+        "title": "Command Inspector: Dump extension commands (JSON)",
+        "shortTitle": "Dump extension commands (JSON)",
+        "icon": "$(json)"
+      },
+      {
+        "command": "vscode-command-inspector.dumpExtensionAsJSON",
+        "title": "Command Inspector: Dump extension(s) (JSON)",
+        "shortTitle": "Dump extension(s) (JSON)",
+        "icon": "$(json)"
+      },
+      {
+        "command": "vscode-command-inspector.invokeCommand",
+        "title": "Command Inspector: Invoke command",
+        "shortTitle": "Invoke command",
+        "ijcon": "$(debug-start)"
+      },
+      {
+        "command": "vscode-command-inspector.tools.echo",
+        "title": "Command Inspector (Tools): Echo",
+        "shortTitle": "Echo",
+        "icon": "$(unmute)"
+      }
+    ]
+  },
+  "buuug7.chinese-punctuation-to-english": {
+    "id": "buuug7.chinese-punctuation-to-english",
+    "name": "chinese-punctuation-to-english",
+    "description": "中文标点符号转换为英文",
+    "version": "1.1.0",
+    "commands": [
+      {
+        "command": "chinese-punctuation-to-english.toEnglish",
+        "category": "Chinese-punctuation-to-english",
+        "title": "To English Punctuation"
+      }
+    ]
+  },
+  "cweijan.vscode-office": {
+    "id": "cweijan.vscode-office",
+    "name": "vscode-office",
+    "description": "View word,excel files and using WYSIWYG editor for markdown.",
+    "version": "3.2.9",
+    "commands": [
+      {
+        "command": "rest-client.request",
+        "title": "Send Request",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.rerun-last-request",
+        "title": "Rerun Last Request",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.cancel-request",
+        "title": "Cancel Request",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.switch-environment",
+        "title": "Switch Environment",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.history",
+        "title": "View Request History",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.clear-history",
+        "title": "Clear Request History",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.save-response",
+        "title": "Save Full Response",
+        "icon": {
+          "light": "./images/save.svg",
+          "dark": "./images/save-inverse.svg"
+        },
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.save-response-body",
+        "title": "Save Response Body",
+        "icon": {
+          "light": "./images/save-body.svg",
+          "dark": "./images/save-body-inverse.svg"
+        },
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.copy-response-body",
+        "title": "Copy Response Body",
+        "icon": {
+          "light": "./images/copy.svg",
+          "dark": "./images/copy-inverse.svg"
+        },
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.generate-codesnippet",
+        "title": "Generate Code Snippet",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.copy-codesnippet",
+        "title": "Copy Code Snippet",
+        "icon": {
+          "light": "./images/copy.svg",
+          "dark": "./images/copy-inverse.svg"
+        },
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.copy-request-as-curl",
+        "title": "Copy Request As cURL",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.clear-aad-token-cache",
+        "title": "Clear Azure AD Token Cache",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.fold-response",
+        "title": "Fold Response",
+        "category": "Rest Client"
+      },
+      {
+        "command": "rest-client.unfold-response",
+        "title": "Unfold Response",
+        "category": "Rest Client"
+      },
+      {
+        "command": "office.reg.jumpToKey",
+        "title": "REG: Jump to registry key"
+      },
+      {
+        "command": "office.markdown.switch",
+        "title": "Switch markdown editor",
+        "icon": {
+          "dark": "./images/switch.svg",
+          "light": "./images/switch_light.svg"
+        }
+      },
+      {
+        "command": "office.markdown.paste",
+        "title": "Enhance pater in markdown"
+      },
+      {
+        "command": "office.html.preview",
+        "title": "Preview HTML"
+      }
+    ]
+  },
+  "formulahendry.code-runner": {
+    "id": "formulahendry.code-runner",
+    "name": "code-runner",
+    "description": "Run C, C++, Java, JS, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, CMD, BASH, F#, C#, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml, R, AppleScript, Elixir, VB.NET, Clojure, Haxe, Obj-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Pascal, Haskell, Nim, D, Lisp, Kit, V, SCSS, Sass, CUDA, Less, Fortran, Ring, Standard ML, Zig, Mojo",
+    "version": "0.12.1",
+    "commands": [
+      {
+        "command": "code-runner.run",
+        "title": "Run Code",
+        "icon": "$(play)"
+      },
+      {
+        "command": "code-runner.runCustomCommand",
+        "title": "Run Custom Command"
+      },
+      {
+        "command": "code-runner.runByLanguage",
+        "title": "Run By Language"
+      },
+      {
+        "command": "code-runner.stop",
+        "title": "Stop Code Run",
+        "icon": "$(debug-stop)"
+      }
+    ]
+  },
+  "jaaxxx.handydandy-notebook-icon": {
+    "id": "jaaxxx.handydandy-notebook-icon",
+    "name": "handydandy-notebook-icon",
+    "description": "Icon for notebook for evaluating scripts in a variety of languages",
+    "version": "0.0.1"
+  },
+  "jakearl.handydandy-notebook": {
+    "id": "jakearl.handydandy-notebook",
+    "name": "handydandy-notebook",
+    "description": "Notebook for evaluating scripts in a variety of languages",
+    "version": "0.1.4",
+    "commands": [
+      {
+        "title": "New Handy Dandy Notebook",
+        "command": "handydandy-notebook.newNotebook",
+        "shortTitle": "Handy Dandy Notebook"
+      },
+      {
+        "title": "Open in Handy Dandy Notebook",
+        "command": "handydandy-notebook.openInNotebook"
+      }
+    ]
+  },
+  "ms-azuretools.vscode-docker": {
+    "id": "ms-azuretools.vscode-docker",
+    "name": "vscode-docker",
+    "description": "Makes it easy to create, manage, and debug containerized applications.",
+    "version": "1.29.0",
+    "commands": [
+      {
+        "command": "vscode-docker.compose.down",
+        "title": "Compose Down",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.compose.restart",
+        "title": "Compose Restart",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.compose.up",
+        "title": "Compose Up",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.compose.up.subset",
+        "title": "Compose Up - Select Services",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.configure",
+        "title": "Add Docker Files to Workspace...",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.configureCompose",
+        "title": "Add Docker Compose Files to Workspace...",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.openDockerDownloadPage",
+        "title": "Learn More About Installing Docker Desktop",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.containers.attachShell",
+        "title": "Attach Shell",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.browse",
+        "title": "Open in Browser",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.configureExplorer",
+        "title": "Configure Explorer...",
+        "category": "Docker Containers",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "vscode-docker.containers.downloadFile",
+        "title": "Download...",
+        "category": "Docker Containers",
+        "icon": "$(desktop-download)"
+      },
+      {
+        "command": "vscode-docker.containers.inspect",
+        "title": "Inspect",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.openFile",
+        "title": "Open",
+        "category": "Docker Containers",
+        "icon": "$(go-to-file)"
+      },
+      {
+        "command": "vscode-docker.containers.prune",
+        "title": "Prune...",
+        "category": "Docker Containers",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "vscode-docker.containers.refresh",
+        "title": "Refresh",
+        "category": "Docker Containers",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "vscode-docker.containers.remove",
+        "title": "Remove...",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.group.remove",
+        "title": "Remove...",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.restart",
+        "title": "Restart",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.select",
+        "title": "Select container",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.start",
+        "title": "Start",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.stop",
+        "title": "Stop",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.stats",
+        "title": "Stats",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.containers.viewLogs",
+        "title": "View Logs",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.composeGroup.logs",
+        "title": "Compose Logs",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.composeGroup.start",
+        "title": "Compose Start",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.composeGroup.stop",
+        "title": "Compose Stop",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.composeGroup.restart",
+        "title": "Compose Restart",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.containers.composeGroup.down",
+        "title": "Compose Down",
+        "category": "Docker Containers"
+      },
+      {
+        "command": "vscode-docker.debugging.initializeForDebugging",
+        "title": "Initialize for Docker debugging",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.images.build",
+        "title": "Build Image...",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.configureExplorer",
+        "title": "Configure Explorer...",
+        "category": "Docker Images",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "vscode-docker.images.inspect",
+        "title": "Inspect",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.prune",
+        "title": "Prune...",
+        "category": "Docker Images",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "vscode-docker.images.showDangling",
+        "title": "Show dangling images",
+        "category": "Docker Images",
+        "icon": "$(eye)"
+      },
+      {
+        "command": "vscode-docker.images.hideDangling",
+        "title": "Hide dangling images",
+        "category": "Docker Images",
+        "icon": "$(eye-closed)"
+      },
+      {
+        "command": "vscode-docker.images.pull",
+        "title": "Pull",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.push",
+        "title": "Push...",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.refresh",
+        "title": "Refresh",
+        "category": "Docker Images",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "vscode-docker.images.remove",
+        "title": "Remove...",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.group.remove",
+        "title": "Remove...",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.run",
+        "title": "Run",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.runAzureCli",
+        "title": "Run Azure CLI",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.runInteractive",
+        "title": "Run Interactive",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.tag",
+        "title": "Tag...",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.images.copyFullTag",
+        "title": "Copy Full Tag",
+        "category": "Docker Images"
+      },
+      {
+        "command": "vscode-docker.networks.configureExplorer",
+        "title": "Configure Explorer...",
+        "category": "Docker Networks",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "vscode-docker.networks.create",
+        "title": "Create...",
+        "category": "Docker Networks",
+        "icon": "$(add)"
+      },
+      {
+        "command": "vscode-docker.networks.inspect",
+        "title": "Inspect",
+        "category": "Docker Networks"
+      },
+      {
+        "command": "vscode-docker.networks.prune",
+        "title": "Prune...",
+        "category": "Docker Networks",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "vscode-docker.networks.refresh",
+        "title": "Refresh",
+        "category": "Docker Networks",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "vscode-docker.networks.remove",
+        "title": "Remove...",
+        "category": "Docker Networks"
+      },
+      {
+        "command": "vscode-docker.pruneSystem",
+        "title": "Prune System...",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.registries.azure.buildImage",
+        "title": "Build Image in Azure...",
+        "category": "Azure Container Registry"
+      },
+      {
+        "command": "vscode-docker.registries.azure.createRegistry",
+        "title": "Create Registry...",
+        "category": "Azure Container Registry"
+      },
+      {
+        "command": "vscode-docker.registries.azure.deleteRegistry",
+        "title": "Delete Registry...",
+        "category": "Azure Container Registry"
+      },
+      {
+        "command": "vscode-docker.registries.azure.deleteRepository",
+        "title": "Delete Repository...",
+        "category": "Azure Container Registry"
+      },
+      {
+        "command": "vscode-docker.registries.azure.openInPortal",
+        "title": "Open in Portal",
+        "category": "Azure Container Registry"
+      },
+      {
+        "command": "vscode-docker.registries.azure.untagImage",
+        "title": "Untag Image...",
+        "category": "Azure Container Registry"
+      },
+      {
+        "command": "vscode-docker.registries.azure.viewProperties",
+        "title": "View Properties",
+        "category": "Azure Container Registry"
+      },
+      {
+        "command": "vscode-docker.registries.connectRegistry",
+        "title": "Connect Registry...",
+        "category": "Docker Registries",
+        "icon": "$(plug)"
+      },
+      {
+        "command": "vscode-docker.registries.copyImageDigest",
+        "title": "Copy Image Digest",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.inspectRemoteImageManifest",
+        "title": "Inspect Image Manifest",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.copyRemoteFullTag",
+        "title": "Copy Full Tag",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.deleteImage",
+        "title": "Delete Image...",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.deployImageToAzure",
+        "title": "Deploy Image to Azure App Service...",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.deployImageToAca",
+        "title": "Deploy Image to Azure Container Apps...",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.disconnectRegistry",
+        "title": "Disconnect",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.genericV2.removeTrackedRegistry",
+        "title": "Disconnect from Generic Docker Registry",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.genericV2.addTrackedRegistry",
+        "title": "Connect to Generic Docker Registry...",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.dockerHub.openInBrowser",
+        "title": "Open in Browser",
+        "category": "Docker Hub"
+      },
+      {
+        "command": "vscode-docker.registries.help",
+        "title": "Registries Help",
+        "category": "Docker Registries",
+        "icon": "$(question)"
+      },
+      {
+        "command": "vscode-docker.registries.logInToDockerCli",
+        "title": "Log In to Docker CLI",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.logOutOfDockerCli",
+        "title": "Log Out of Docker CLI",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.pullImage",
+        "title": "Pull Image",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.pullRepository",
+        "title": "Pull Repository",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.reconnectRegistry",
+        "title": "Re-enter credentials",
+        "category": "Docker Registries"
+      },
+      {
+        "command": "vscode-docker.registries.refresh",
+        "title": "Refresh",
+        "category": "Docker Registries",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "vscode-docker.volumes.configureExplorer",
+        "title": "Configure Explorer...",
+        "category": "Docker Volumes",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "vscode-docker.volumes.inspect",
+        "title": "Inspect",
+        "category": "Docker Volumes"
+      },
+      {
+        "command": "vscode-docker.volumes.prune",
+        "title": "Prune...",
+        "category": "Docker Volumes",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "vscode-docker.volumes.refresh",
+        "title": "Refresh",
+        "category": "Docker Volumes",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "vscode-docker.volumes.remove",
+        "title": "Remove...",
+        "category": "Docker Volumes"
+      },
+      {
+        "command": "vscode-docker.help",
+        "title": "Docker Help",
+        "category": "Docker",
+        "icon": "$(question)"
+      },
+      {
+        "command": "vscode-docker.help.reportIssue",
+        "title": "Report Issue",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.help.openWalkthrough",
+        "title": "Open Docker Extension Walkthrough",
+        "category": "Docker"
+      },
+      {
+        "command": "vscode-docker.contexts.use",
+        "title": "Use",
+        "category": "Docker Contexts",
+        "icon": "$(check)"
+      },
+      {
+        "command": "vscode-docker.contexts.remove",
+        "title": "Remove...",
+        "category": "Docker Contexts"
+      },
+      {
+        "command": "vscode-docker.contexts.inspect",
+        "title": "Inspect",
+        "category": "Docker Contexts"
+      },
+      {
+        "command": "vscode-docker.contexts.configureExplorer",
+        "title": "Configure Explorer...",
+        "category": "Docker Contexts",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "vscode-docker.contexts.refresh",
+        "title": "Refresh",
+        "category": "Docker Contexts",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "vscode-docker.contexts.help",
+        "title": "Docker Context Help",
+        "category": "Docker Contexts",
+        "icon": "$(question)"
+      },
+      {
+        "command": "vscode-docker.activateRegistryProviders",
+        "title": "Activate Registry Providers...",
+        "category": "Docker"
+      }
+    ]
+  },
+  "MS-CEINTL.vscode-language-pack-zh-hans": {
+    "id": "MS-CEINTL.vscode-language-pack-zh-hans",
+    "name": "vscode-language-pack-zh-hans",
+    "description": "Language pack extension for Chinese (Simplified)",
+    "version": "1.85.2024021409"
+  },
+  "ms-python.debugpy": {
+    "id": "ms-python.debugpy",
+    "name": "debugpy",
+    "description": "Python Debugger extension using `debugpy`.",
+    "version": "2024.0.0",
+    "commands": [
+      {
+        "category": "Python Debugger",
+        "command": "debugpy.debugInTerminal",
+        "icon": "$(debug-alt)",
+        "title": {
+          "value": "Python 调试程序: 调试 Python 文件",
+          "original": "Python Debugger: Debug Python File"
+        }
+      },
+      {
+        "category": "Python Debugger",
+        "command": "debugpy.debugUsingLaunchConfig",
+        "icon": "$(debug-alt)",
+        "title": {
+          "value": "Python 调试程序: 使用 launch.json 进行调试",
+          "original": "Python Debugger: Debug using launch.json"
+        }
+      },
+      {
+        "category": "Python Debugger",
+        "command": "debugpy.clearCacheAndReload",
+        "title": {
+          "value": "清除缓存并重新加载窗口",
+          "original": "Clear Cache and Reload Window"
+        }
+      },
+      {
+        "category": "Python Debugger",
+        "command": "debugpy.viewOutput",
+        "icon": {
+          "dark": "resources/dark/repl.svg",
+          "light": "resources/light/repl.svg"
+        },
+        "title": {
+          "value": "显示输出",
+          "original": "Show Output"
+        }
+      }
+    ]
+  },
+  "ms-python.python": {
+    "id": "ms-python.python",
+    "name": "python",
+    "description": "IntelliSense (Pylance), Linting, Debugging (Python Debugger), code formatting, refactoring, unit tests, and more.",
+    "version": "2024.2.1",
+    "commands": [
+      {
+        "title": {
+          "value": "新建 Python 文件",
+          "original": "New Python File"
+        },
+        "shortTitle": "Python 文件",
+        "category": "Python",
+        "command": "python.createNewFile"
+      },
+      {
+        "category": "Python",
+        "command": "python.analysis.restartLanguageServer",
+        "title": {
+          "value": "重启语言服务器",
+          "original": "Restart Language Server"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.clearCacheAndReload",
+        "title": {
+          "value": "清除缓存并重新加载窗口",
+          "original": "Clear Cache and Reload Window"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.clearWorkspaceInterpreter",
+        "title": {
+          "value": "清除工作区解释器设置",
+          "original": "Clear Workspace Interpreter Setting"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.configureTests",
+        "title": {
+          "value": "配置测试",
+          "original": "Configure Tests"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.createTerminal",
+        "title": {
+          "value": "创建终端",
+          "original": "Create Terminal"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.createEnvironment",
+        "title": {
+          "value": "创建环境...",
+          "original": "Create Environment..."
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.createEnvironment-button",
+        "title": {
+          "value": "创建环境...",
+          "original": "Create Environment..."
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.enableSourceMapSupport",
+        "title": {
+          "value": "为扩展调试启用源映射支持",
+          "original": "Enable Source Map Support For Extension Debugging"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.execInTerminal",
+        "title": {
+          "value": "在终端中运行 Python 文件",
+          "original": "Run Python File in Terminal"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.execInTerminal-icon",
+        "icon": "$(play)",
+        "title": {
+          "value": "运行 Python 文件",
+          "original": "Run Python File"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.execInDedicatedTerminal",
+        "icon": "$(play)",
+        "title": {
+          "value": "在专用终端中运行 Python 文件",
+          "original": "Run Python File in Dedicated Terminal"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.execSelectionInDjangoShell",
+        "title": {
+          "value": "在 Django Shell 中运行选择/行",
+          "original": "Run Selection/Line in Django Shell"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.execSelectionInTerminal",
+        "title": {
+          "value": "在 Python 终端中运行选择/行",
+          "original": "Run Selection/Line in Python Terminal"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.launchTensorBoard",
+        "title": {
+          "value": "启动 Tensorboard",
+          "original": "Launch TensorBoard"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.refreshTensorBoard",
+        "enablement": "python.hasActiveTensorBoardSession",
+        "icon": "$(refresh)",
+        "title": {
+          "value": "刷新 TensorBoard",
+          "original": "Refresh TensorBoard"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.reportIssue",
+        "title": {
+          "value": "报告问题…",
+          "original": "Report Issue..."
+        }
+      },
+      {
+        "category": "Test",
+        "command": "testing.reRunFailTests",
+        "icon": "$(run-errors)",
+        "title": {
+          "value": "重新运行失败的测试",
+          "original": "Rerun Failed Tests"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.setInterpreter",
+        "title": {
+          "value": "选择解释器",
+          "original": "Select Interpreter"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.startREPL",
+        "title": {
+          "value": "启动 REPL",
+          "original": "Start REPL"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.viewLanguageServerOutput",
+        "enablement": "python.hasLanguageServerOutputChannel",
+        "title": {
+          "value": "显示语言服务器输出",
+          "original": "Show Language Server Output"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.viewOutput",
+        "icon": {
+          "dark": "resources/dark/repl.svg",
+          "light": "resources/light/repl.svg"
+        },
+        "title": {
+          "value": "显示输出",
+          "original": "Show Output"
+        }
+      },
+      {
+        "category": "Python",
+        "command": "python.installJupyter",
+        "title": {
+          "value": "安装 Jupyter 扩展",
+          "original": "Install the Jupyter extension"
+        }
+      }
+    ]
+  },
+  "ms-python.vscode-pylance": {
+    "id": "ms-python.vscode-pylance",
+    "name": "vscode-pylance",
+    "description": "A performant, feature-rich language server for Python in VS Code",
+    "version": "2024.3.1",
+    "commands": [
+      {
+        "command": "pylance.reportIssue",
+        "title": "Pylance: Report Issue..."
+      },
+      {
+        "command": "pylance.indexing.clearPersistedIndices",
+        "title": "Pylance: Clear All Persisted Indices"
+      },
+      {
+        "command": "pylance.dumpTokens",
+        "title": "Dump token streams ...",
+        "category": "Pylance debugging",
+        "enablement": "editorLangId == python && config.pyright.development"
+      },
+      {
+        "command": "pylance.dumpNodes",
+        "title": "Dump parse tree ...",
+        "category": "Pylance debugging",
+        "enablement": "editorLangId == python && config.pyright.development"
+      },
+      {
+        "command": "pylance.dumpTypes",
+        "title": "Dump type info ...",
+        "category": "Pylance debugging",
+        "enablement": "editorLangId == python && config.pyright.development"
+      },
+      {
+        "command": "pylance.dumpCachedTypes",
+        "title": "Pylance: Dump cached type info ...",
+        "category": "Pylance debugging",
+        "enablement": "editorLangId == python && config.pyright.development"
+      },
+      {
+        "command": "pylance.dumpCodeFlowGraph",
+        "title": "Pylance: Dump code flow graph for node ...",
+        "category": "Pylance debugging",
+        "enablement": "editorLangId == python && config.pyright.development"
+      },
+      {
+        "command": "pylance.learnMoreAboutImportResolution",
+        "title": "Learn more about import resolution",
+        "enablement": "false"
+      }
+    ]
+  },
+  "ms-toolsai.jupyter": {
+    "id": "ms-toolsai.jupyter",
+    "name": "jupyter",
+    "description": "Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.",
+    "version": "2023.11.1100101639",
+    "commands": [
+      {
+        "command": "dataScience.ClearCache",
+        "title": {
+          "value": "清除高速缓存",
+          "original": "Clear Cache"
+        },
+        "category": "Jupyter (Dev)",
+        "enablement": "jupyter.development"
+      },
+      {
+        "command": "jupyter.manageAccessToKernels",
+        "title": {
+          "value": "管理对 Jupyter 内核的访问权限",
+          "original": "Manage Access To Jupyter Kernels"
+        },
+        "category": "Jupyter"
+      },
+      {
+        "command": "dataScience.ClearUserProviderJupyterServerCache",
+        "title": {
+          "value": "清除用户 Jupyter 服务器缓存",
+          "original": "Clear User Jupyter Server Cache"
+        },
+        "category": "Jupyter (Dev)",
+        "enablement": "jupyter.development"
+      },
+      {
+        "command": "jupyter.replayPylanceLog",
+        "title": {
+          "value": "重播 Pylance 日志",
+          "original": "Replay Pylance Log"
+        },
+        "category": "Jupyter (Dev)",
+        "enablement": "jupyter.development && notebookType == jupyter-notebook && isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.replayPylanceLogStep",
+        "title": {
+          "value": "步骤 Pylance 日志",
+          "original": "Step Pylance Log"
+        },
+        "category": "Jupyter (Dev)",
+        "icon": "$(debug-start)",
+        "enablement": "jupyter.development && notebookType == jupyter-notebook && isWorkspaceTrusted && jupyter.replayLogLoaded && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.filterKernels",
+        "title": {
+          "value": "筛选器内核",
+          "original": "Filter Kernels"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension && config.notebook.kernelPicker.type != mru"
+      },
+      {
+        "command": "jupyter.runByLine",
+        "title": {
+          "value": "按行运行",
+          "original": "Run by Line"
+        },
+        "icon": "$(debug-line-by-line)",
+        "category": "Jupyter",
+        "enablement": "notebookKernel =~ /^ms-toolsai.jupyter\\// && jupyter.ispythonnotebook && notebookCellType == code && isWorkspaceTrusted && resource not in jupyter.notebookeditor.debugDocuments || !notebookKernel && jupyter.ispythonnotebook && notebookCellType == code && isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runAndDebugCell",
+        "title": {
+          "value": "调试单元格",
+          "original": "Debug Cell"
+        },
+        "icon": "$(debug-alt-small)",
+        "category": "Jupyter",
+        "enablement": "notebookKernel =~ /^ms-toolsai.jupyter\\// && jupyter.ispythonnotebook && notebookCellType == code && isWorkspaceTrusted && resource not in jupyter.notebookeditor.debugDocuments || !notebookKernel && jupyter.ispythonnotebook && notebookCellType == code && isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runByLineNext",
+        "title": {
+          "value": "运行下一行",
+          "original": "Run Next Line"
+        },
+        "icon": "$(debug-line-by-line)",
+        "category": "Jupyter",
+        "enablement": "notebookCellResource in jupyter.notebookeditor.runByLineCells"
+      },
+      {
+        "command": "jupyter.runByLineStop",
+        "title": {
+          "value": "继续执行",
+          "original": "Continue Execution"
+        },
+        "icon": "$(debug-continue-small)",
+        "category": "Jupyter",
+        "enablement": "notebookCellResource in jupyter.notebookeditor.runByLineCells"
+      },
+      {
+        "command": "jupyter.viewOutput",
+        "title": {
+          "value": "显示输出",
+          "original": "Show Output"
+        },
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.notebookeditor.export",
+        "title": {
+          "value": "导出为",
+          "original": "Export As"
+        },
+        "shortTitle": "导出",
+        "category": "Notebook",
+        "icon": {
+          "light": "resources/light/export_to_python.svg",
+          "dark": "resources/dark/export_to_python.svg"
+        },
+        "enablement": "notebookType == jupyter-notebook && isWorkspaceTrusted && !jupyter.webExtension || notebookType == jupyter-notebook && isWorkspaceTrusted && jupyter.webExtension && notebookKernel =~ /^ms-toolsai.jupyter\\//"
+      },
+      {
+        "command": "jupyter.export",
+        "title": {
+          "value": "导出为",
+          "original": "Export As"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension || isWorkspaceTrusted && jupyter.webExtension && notebookKernel =~ /^ms-toolsai.jupyter\\//"
+      },
+      {
+        "command": "jupyter.exportAsPythonScript",
+        "title": {
+          "value": "导出到 Python 脚本",
+          "original": "Export to Python Script"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension || isWorkspaceTrusted && jupyter.webExtension && notebookKernel =~ /^ms-toolsai.jupyter\\//"
+      },
+      {
+        "command": "jupyter.exportToHTML",
+        "title": {
+          "value": "导出到 HTML",
+          "original": "Export to HTML"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension || isWorkspaceTrusted && jupyter.webExtension && notebookKernel =~ /^ms-toolsai.jupyter\\//"
+      },
+      {
+        "command": "jupyter.exportToPDF",
+        "title": {
+          "value": "导出为 PDF",
+          "original": "Export to PDF"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension || isWorkspaceTrusted && jupyter.webExtension && notebookKernel =~ /^ms-toolsai.jupyter\\//"
+      },
+      {
+        "command": "jupyter.selectJupyterInterpreter",
+        "title": {
+          "value": "选择“解释器”以启动 Jupyter 服务器",
+          "original": "Select Interpreter to Start Jupyter Server"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.runcurrentcell",
+        "title": {
+          "value": "运行当前单元格",
+          "original": "Run Current Cell"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.debugcell",
+        "title": {
+          "value": "调试单元格",
+          "original": "Debug Cell"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.debugstepover",
+        "title": {
+          "value": "单步跳过",
+          "original": "Step Over"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.debugstop",
+        "title": {
+          "value": "停止",
+          "original": "Stop"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.debugcontinue",
+        "title": {
+          "value": "继续",
+          "original": "Continue"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.insertCellBelowPosition",
+        "title": {
+          "value": "在位置下方插入单元格",
+          "original": "Insert Cell Below Position"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.insertCellBelow",
+        "title": {
+          "value": "在下方插入单元格",
+          "original": "Insert Cell Below"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.insertCellAbove",
+        "title": {
+          "value": "在上方插入单元格",
+          "original": "Insert Cell Above"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.deleteCells",
+        "title": {
+          "value": "删除所选单元格",
+          "original": "Delete Selected Cells"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.selectCell",
+        "title": {
+          "value": "选择单元格",
+          "original": "Select Cell"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.selectCellContents",
+        "title": {
+          "value": "选择单元格内容",
+          "original": "Select Cell Contents"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.extendSelectionByCellAbove",
+        "title": {
+          "value": "按上面的单元格扩展选择",
+          "original": "Extend Selection By Cell Above"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.extendSelectionByCellBelow",
+        "title": {
+          "value": "按下面的单元格扩展所选内容",
+          "original": "Extend Selection By Cell Below"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.moveCellsUp",
+        "title": {
+          "value": "向上移动所选单元格",
+          "original": "Move Selected Cells Up"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.moveCellsDown",
+        "title": {
+          "value": "向下移动所选单元格",
+          "original": "Move Selected Cells Down"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.changeCellToMarkdown",
+        "title": {
+          "value": "将单元格更改为 Markdown",
+          "original": "Change Cell to Markdown"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.changeCellToCode",
+        "title": {
+          "value": "将单元格更改为代码",
+          "original": "Change Cell to Code"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.gotoNextCellInFile",
+        "title": {
+          "value": "转到“下一个单元格”",
+          "original": "Go to Next Cell"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.gotoPrevCellInFile",
+        "title": {
+          "value": "转到上一个单元格",
+          "original": "Go to Previous Cell"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.runcurrentcelladvance",
+        "title": {
+          "value": "运行当前单元格并前进",
+          "original": "Run Current Cell And Advance"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runcurrentcellandallbelow.palette",
+        "title": {
+          "value": "运行当前单元格及更低版本",
+          "original": "Run Current Cell and Below"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runallcellsabove.palette",
+        "title": {
+          "value": "在当前单元格上方运行单元格",
+          "original": "Run Cells Above Current Cell"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.debugcurrentcell.palette",
+        "title": {
+          "value": "调试当前单元格",
+          "original": "Debug Current Cell"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.execSelectionInteractive",
+        "title": {
+          "value": "在交互窗口中运行选择/行",
+          "original": "Run Selection/Line in Interactive Window"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.createnewinteractive",
+        "title": {
+          "value": "创建交互窗口",
+          "original": "Create Interactive Window"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runFileInteractive",
+        "title": {
+          "value": "在交互窗口中运行当前文件",
+          "original": "Run Current File in Interactive Window"
+        },
+        "icon": "$(play)",
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.debugFileInteractive",
+        "title": {
+          "value": "在交互窗口中调试当前文件",
+          "original": "Debug Current File in Interactive Window"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.runallcells",
+        "title": {
+          "value": "运行所有单元格",
+          "original": "Run All Cells"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runallcellsabove",
+        "title": {
+          "value": "运行以上",
+          "original": "Run Above"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runcellandallbelow",
+        "title": {
+          "value": "在下面运行",
+          "original": "Run Below"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runcell",
+        "title": {
+          "value": "运行单元格",
+          "original": "Run Cell"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runtoline",
+        "title": {
+          "value": "交互窗口中的“运行到行”",
+          "original": "Run To Line in Interactive Window"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.runfromline",
+        "title": {
+          "value": "在交互窗口中从行运行",
+          "original": "Run From Line in Interactive Window"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.importnotebook",
+        "title": {
+          "value": "导入 Jupyter Notebook",
+          "original": "Import Jupyter Notebook"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.importnotebookfile",
+        "title": {
+          "value": "将笔记本导入脚本",
+          "original": "Import Notebook to Script"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.exportoutputasnotebook",
+        "title": {
+          "value": "将交互窗口导出为 Jupyter Notebook",
+          "original": "Export Interactive Window as Jupyter Notebook"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.exportfileasnotebook",
+        "title": {
+          "value": "将当前 Python 文件导出为 Jupyter Notebook",
+          "original": "Export Current Python File as Jupyter Notebook"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.exportfileandoutputasnotebook",
+        "title": {
+          "value": "将当前 Python 文件和输出导出为 Jupyter Notebook",
+          "original": "Export Current Python File and Output as Jupyter Notebook"
+        },
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.interruptkernel",
+        "title": {
+          "value": "中断 Kernel",
+          "original": "Interrupt Kernel"
+        },
+        "shortTitle": "中断",
+        "category": "Jupyter",
+        "icon": {
+          "light": "resources/light/interrupt.svg",
+          "dark": "resources/dark/interrupt.svg"
+        },
+        "enablement": "isWorkspaceTrusted && jupyter.interactive.canInterruptNotebookKernel"
+      },
+      {
+        "command": "jupyter.restartkernel",
+        "title": {
+          "value": "重启 Kernel",
+          "original": "Restart Kernel"
+        },
+        "shortTitle": "重启",
+        "category": "Jupyter",
+        "icon": {
+          "light": "resources/light/restart-kernel.svg",
+          "dark": "resources/dark/restart-kernel.svg"
+        },
+        "enablement": "isWorkspaceTrusted && (jupyter.interactive.canRestartNotebookKernel || (notebookKernel =~ /^ms-toolsai.jupyter\\// && jupyter.notebookeditor.canrestartNotebookkernel))"
+      },
+      {
+        "command": "jupyter.restartkernelandrunallcells",
+        "title": {
+          "value": "重启内核并运行所有单元格",
+          "original": "Restart Kernel and Run All Cells"
+        },
+        "shortTitle": "重新启动并全部运行",
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && (jupyter.interactive.canRestartNotebookKernel || (notebookKernel =~ /^ms-toolsai.jupyter\\// && jupyter.notebookeditor.canrestartNotebookkernel))"
+      },
+      {
+        "command": "jupyter.restartkernelandrunuptoselectedcell",
+        "title": {
+          "value": "重新启动内核并运行到所选单元格",
+          "original": "Restart Kernel and Run Up To Selected Cell"
+        },
+        "shortTitle": "重新启动内核并运行到所选单元格",
+        "category": "Jupyter",
+        "enablement": "isWorkspaceTrusted && (notebookKernel =~ /^ms-toolsai.jupyter\\// && jupyter.notebookeditor.canrestartNotebookkernel)"
+      },
+      {
+        "command": "jupyter.notebookeditor.addcellbelow",
+        "title": {
+          "value": "将空单元格添加到 Notebook 文件",
+          "original": "Add Empty Cell to Notebook File"
+        },
+        "category": "Notebook",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.notebookeditor.removeallcells",
+        "title": {
+          "value": "删除所有 Notebook 编辑器单元格",
+          "original": "Delete All Notebook Editor Cells"
+        },
+        "category": "Notebook",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.notebookeditor.expandallcells",
+        "title": {
+          "value": "展开所有 Notebook 单元格",
+          "original": "Expand All Notebook Cells"
+        },
+        "category": "Notebook",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.notebookeditor.collapseallcells",
+        "title": {
+          "value": "折叠所有 Notebook 单元格",
+          "original": "Collapse All Notebook Cells"
+        },
+        "category": "Notebook",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.expandallcells",
+        "title": {
+          "value": "展开所有单元格输入",
+          "original": "Expand All Interactive Cells"
+        },
+        "shortTitle": "展开",
+        "category": "Jupyter",
+        "icon": "$(expand-all)"
+      },
+      {
+        "command": "jupyter.collapseallcells",
+        "title": {
+          "value": "折叠所有单元格输入",
+          "original": "Collapse All Interactive Cells"
+        },
+        "shortTitle": "折叠",
+        "category": "Jupyter",
+        "icon": "$(collapse-all)"
+      },
+      {
+        "command": "jupyter.addcellbelow",
+        "title": {
+          "value": "将空单元格添加到文件",
+          "original": "Add Empty Cell to File"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.createnewnotebook",
+        "title": {
+          "value": "创建新 Jupyter Notebook",
+          "original": "Create New Jupyter Notebook"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.scrolltocell",
+        "title": {
+          "value": "将单元格滚动到视图中",
+          "original": "Scroll Cell Into View"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.latestExtension",
+        "title": "DataScience.latestExtension",
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.enableDebugLogging",
+        "title": {
+          "value": "启用调试日志记录",
+          "original": "Enable Debug Logging"
+        },
+        "category": "Jupyter",
+        "enablement": "!jupyter.webExtension"
+      },
+      {
+        "command": "jupyter.resetLoggingLevel",
+        "title": {
+          "value": "重置日志记录级别",
+          "original": "Reset Logging Level"
+        },
+        "enablement": "!jupyter.webExtension",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.showDataViewer",
+        "title": {
+          "value": "在数据查看器中查看值",
+          "original": "View Value in Data Viewer"
+        },
+        "enablement": "!jupyter.webExtension",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.clearSavedJupyterUris",
+        "title": {
+          "value": "清除 Jupyter 远程服务器列表",
+          "original": "Clear Jupyter Remote Server List"
+        },
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.openVariableView",
+        "title": {
+          "value": "打开变量视图",
+          "original": "Open Variables View"
+        },
+        "shortTitle": "变量",
+        "icon": "$(variable-group)",
+        "category": "Jupyter",
+        "enablement": "notebookType == jupyter-notebook && isWorkspaceTrusted || notebookType == interactive && isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.openOutlineView",
+        "title": {
+          "value": "显示目录(大纲视图)",
+          "original": "Show Table Of Contents (Outline View)"
+        },
+        "shortTitle": "大纲",
+        "icon": "$(list-unordered)",
+        "category": "Jupyter",
+        "enablement": "notebookType == jupyter-notebook"
+      },
+      {
+        "command": "jupyter.refreshDataViewer",
+        "title": {
+          "value": "刷新数据查看器",
+          "original": "Refresh Data Viewer"
+        },
+        "category": "Jupyter",
+        "enablement": "jupyter.dataViewerActive && isWorkspaceTrusted"
+      },
+      {
+        "command": "jupyter.interactive.clearAllCells",
+        "title": {
+          "value": "全部清除",
+          "original": "Clear All"
+        },
+        "icon": "$(close)",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.interactive.goToCode",
+        "title": {
+          "value": "转到代码",
+          "original": "Go to code"
+        },
+        "icon": "$(go-to-file)",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.interactive.exportasnotebook",
+        "title": {
+          "value": "导出到 Jupyter Notebook",
+          "original": "Export to Jupyter Notebook"
+        },
+        "shortTitle": "保存",
+        "icon": "$(save-as)",
+        "enablement": "notebookType == interactive",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.interactive.exportas",
+        "title": {
+          "value": "导出",
+          "original": "Export"
+        },
+        "icon": {
+          "light": "resources/light/export_to_python.svg",
+          "dark": "resources/dark/export_to_python.svg"
+        },
+        "enablement": "notebookType == interactive",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.interactive.copyCell",
+        "title": {
+          "value": "复制单元格",
+          "original": "Copy Cell"
+        },
+        "icon": "$(copy)",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.runInDedicatedExtensionHost",
+        "title": {
+          "value": "在专用扩展主机中运行",
+          "original": "Run in Dedicated Extension Host"
+        },
+        "enablement": "!jupyter.webExtension",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.continueEditSessionInCodespace",
+        "title": "Continue On Codespace",
+        "shortTitle": "Continue On",
+        "icon": "$(vm)",
+        "enablement": "true",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.selectPrecedentCells",
+        "title": "Select Precedent Cells",
+        "icon": "$(gather)",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.selectDependentCells",
+        "title": "Select Dependent Cells",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.runPrecedentCells",
+        "title": "Execute with Precedent Cells",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.runDependentCells",
+        "title": "Execute with Dependent Cells",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension",
+        "category": "Jupyter"
+      },
+      {
+        "command": "jupyter.debugCellSymbols",
+        "title": "Debug Cell Symbols",
+        "icon": "$(debug-alt-small)",
+        "enablement": "isWorkspaceTrusted && !jupyter.webExtension",
+        "category": "Jupyter"
+      }
+    ]
+  },
+  "ms-toolsai.jupyter-keymap": {
+    "id": "ms-toolsai.jupyter-keymap",
+    "name": "jupyter-keymap",
+    "description": "Jupyter keymaps for notebooks",
+    "version": "1.1.2"
+  },
+  "ms-toolsai.jupyter-renderers": {
+    "id": "ms-toolsai.jupyter-renderers",
+    "name": "jupyter-renderers",
+    "description": "Renderers for Jupyter Notebooks (with plotly, vega, gif, png, svg, jpeg and other such outputs)",
+    "version": "1.0.17"
+  },
+  "ms-toolsai.vscode-jupyter-cell-tags": {
+    "id": "ms-toolsai.vscode-jupyter-cell-tags",
+    "name": "vscode-jupyter-cell-tags",
+    "description": "Jupyter Cell Tags support for VS Code",
+    "version": "0.1.8",
+    "commands": [
+      {
+        "command": "jupyter-cell-tags.removeTag",
+        "title": "Remove Cell Tag",
+        "icon": "$(close)"
+      },
+      {
+        "command": "jupyter-cell-tags.addTag",
+        "title": "Add Cell Tag",
+        "icon": "$(add)"
+      },
+      {
+        "command": "jupyter-cell-tags.editTagsInJSON",
+        "title": "Edit Cell Tags (JSON)",
+        "icon": "$(go-to-file)"
+      },
+      {
+        "command": "jupyter-cell-tags.paramaterize",
+        "title": "Mark Cell as Parameters"
+      }
+    ]
+  },
+  "ms-toolsai.vscode-jupyter-slideshow": {
+    "id": "ms-toolsai.vscode-jupyter-slideshow",
+    "name": "vscode-jupyter-slideshow",
+    "description": "Jupyter Slide Show support for VS Code",
+    "version": "0.1.5",
+    "commands": [
+      {
+        "command": "jupyter-slideshow.switchSlideType",
+        "title": "Switch Slide Type"
+      },
+      {
+        "command": "jupyter-slideshow.editSlideShowInJSON",
+        "title": "Edit Slide Type (JSON)",
+        "icon": "$(go-to-file)"
+      }
+    ]
+  },
+  "ms-vscode-remote.remote-containers": {
+    "id": "ms-vscode-remote.remote-containers",
+    "name": "remote-containers",
+    "description": "在 Docker 容器内打开任何文件夹或存储库，并利用Visual Studio Code 的完整功能集。",
+    "version": "0.327.0",
+    "commands": [
+      {
+        "command": "remote-containers.reopenInContainer",
+        "title": {
+          "value": "在容器中重新打开",
+          "original": "Reopen in Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.rebuildAndReopenInContainer",
+        "title": {
+          "value": "在容器中重新生成并重新打开",
+          "original": "Rebuild and Reopen in Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.rebuildNoCacheAndReopenInContainer",
+        "title": {
+          "value": "在无缓存的情况下重新生成并在容器中重新打开",
+          "original": "Rebuild Without Cache and Reopen in Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.reopenLocally",
+        "title": {
+          "value": "在本地重新打开文件夹",
+          "original": "Reopen Folder Locally"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.reopenInWSL",
+        "title": {
+          "value": "在 WSL 中重新打开文件夹",
+          "original": "Reopen Folder in WSL"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.reopenInSSH",
+        "title": {
+          "value": "在 SSH 中重新打开文件夹",
+          "original": "Reopen Folder in SSH"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.reopenInTunnel",
+        "title": {
+          "value": "在 Tunnel 中重新打开文件夹",
+          "original": "Reopen Folder in Tunnel"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.openFolder",
+        "title": {
+          "value": "在容器中打开文件夹...",
+          "original": "Open Folder in Container..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/reopen-folder.svg",
+          "dark": "resources/dark/reopen-folder.svg"
+        }
+      },
+      {
+        "command": "remote-containers.openFolderInContainerInCurrentWindow",
+        "title": {
+          "value": "在当前窗口的容器中打开",
+          "original": "Open in Container in Current Window"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": "$(arrow-right)"
+      },
+      {
+        "command": "remote-containers.openFolderInContainerInNewWindow",
+        "title": {
+          "value": "在新窗口的容器中打开",
+          "original": "Open in Container in New Window"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": "$(empty-window)"
+      },
+      {
+        "command": "remote-containers.openInformationAboutMountPerformance",
+        "title": {
+          "value": "在 Docker 卷中克隆存储库以提高 I/O 性能。",
+          "original": "Clone repository in Docker volume for better I/O performance."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": "$(info)"
+      },
+      {
+        "command": "remote-containers.openRepositoryInVolume",
+        "title": {
+          "value": "在命名容器卷中克隆存储库...",
+          "original": "Clone Repository in Named Container Volume..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.openRepositoryInUniqueVolume",
+        "title": {
+          "value": "在容器卷中克隆存储库...",
+          "original": "Clone Repository in Container Volume..."
+        },
+        "icon": "$(repo-clone)",
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.openRepositoryFromRemoteHubWithEditSession",
+        "title": {
+          "value": "在容器卷中克隆存储库",
+          "original": "Clone Repository in a Container Volume"
+        },
+        "icon": "$(repo-clone)",
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.openRepositoryFromGitWithEditSession",
+        "title": {
+          "value": "在容器卷中克隆存储库",
+          "original": "Clone Repository in a Container Volume"
+        },
+        "icon": "$(repo-clone)",
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.openPullRequestInVolume",
+        "title": {
+          "value": "在容器卷中克隆 GitHub 拉取请求...",
+          "original": "Clone GitHub Pull Request in Container Volume..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.inspectVolume",
+        "title": {
+          "value": "在开发容器中浏览卷...",
+          "original": "Explore a Volume in a Dev Container..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.openWorkspace",
+        "title": {
+          "value": "在容器中打开工作区...",
+          "original": "Open Workspace in Container..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.attachToRunningContainer",
+        "title": {
+          "value": "附加到正在运行的容器...",
+          "original": "Attach to Running Container..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.attachToRunningContainerFromViewlet",
+        "title": {
+          "value": "附加 Visual Studio Code",
+          "original": "Attach Visual Studio Code"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.inspectVolumeFromViewlet",
+        "title": {
+          "value": "在开发容器中浏览",
+          "original": "Explore in a Dev Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.cloneInVolumeFromViewlet",
+        "title": {
+          "value": "克隆到现有卷",
+          "original": "Clone into existing Volume"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.cleanUpDevContainers",
+        "title": {
+          "value": "清理开发容器...",
+          "original": "Clean Up Dev Containers..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "remote-containers.pruneVolumes",
+        "title": {
+          "value": "清理开发卷...",
+          "original": "Clean Up Dev Volumes..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "remote-containers.explorerVolumesRefresh",
+        "title": {
+          "value": "刷新",
+          "original": "Refresh"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "remote-containers.attachToK8sContainerFromViewlet",
+        "title": {
+          "value": "附加 Visual Studio Code",
+          "original": "Attach Visual Studio Code"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.switchContainer",
+        "title": {
+          "value": "切换容器",
+          "original": "Switch Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.rebuildContainer",
+        "title": {
+          "value": "重新生成容器",
+          "original": "Rebuild Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/tools.svg",
+          "dark": "resources/dark/tools.svg"
+        }
+      },
+      {
+        "command": "remote-containers.rebuildContainerNoCache",
+        "title": {
+          "value": "重新生成无缓存的容器",
+          "original": "Rebuild Container Without Cache"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/tools.svg",
+          "dark": "resources/dark/tools.svg"
+        }
+      },
+      {
+        "command": "remote-containers.createDevContainerFile",
+        "title": {
+          "value": "添加开发容器配置文件...",
+          "original": "Add Dev Container Configuration Files..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.createDevContainer",
+        "title": {
+          "value": "新的开发容器...",
+          "original": "New Dev Container..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.settings",
+        "title": {
+          "value": "设置",
+          "original": "Settings"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.getHelp",
+        "title": {
+          "value": "帮助",
+          "original": "Help"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.getStarted",
+        "title": {
+          "value": "开始使用开发容器",
+          "original": "Get Started with Dev Containers"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.trySample",
+        "title": {
+          "value": "试用开发容器示例...",
+          "original": "Try a Dev Container Sample..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.reportIssue",
+        "title": {
+          "value": "报告问题...",
+          "original": "Report Issue..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.provideFeedback",
+        "title": {
+          "value": "提供反馈",
+          "original": "Provide Feedback"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.openDevContainerFile",
+        "title": {
+          "value": "打开容器配置文件",
+          "original": "Open Container Configuration File"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/gear.svg",
+          "dark": "resources/dark/gear.svg"
+        }
+      },
+      {
+        "command": "remote-containers.openAttachConfigByNameFile",
+        "title": {
+          "value": "打开命名容器配置文件",
+          "original": "Open Named Container Configuration File"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.openAttachDevContainerFile",
+        "title": {
+          "value": "打开附加的容器配置文件...",
+          "original": "Open Attached Container Configuration File..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.revealLogTerminal",
+        "title": {
+          "value": "显示容器日志",
+          "original": "Show Container Log"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.openLogFile",
+        "title": {
+          "value": "显示所有日志...",
+          "original": "Show All Logs..."
+        },
+        "category": "Dev Containers Developer"
+      },
+      {
+        "command": "remote-containers.openLastLogFile",
+        "title": {
+          "value": "显示上一个日志",
+          "original": "Show Previous Log"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.attachToContainerInCurrentWindow",
+        "title": {
+          "value": "在当前窗口中附加",
+          "original": "Attach in Current Window"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": "$(arrow-right)"
+      },
+      {
+        "command": "remote-containers.attachToContainerInNewWindow",
+        "title": {
+          "value": "在新窗口中附加",
+          "original": "Attach in New Window"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": "$(empty-window)"
+      },
+      {
+        "command": "remote-containers.stopContainer",
+        "title": {
+          "value": "停止容器",
+          "original": "Stop Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.startContainer",
+        "title": {
+          "value": "启动容器",
+          "original": "Start Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/vm-start.svg",
+          "dark": "resources/dark/vm-start.svg"
+        }
+      },
+      {
+        "command": "remote-containers.removeContainer",
+        "title": {
+          "value": "删除容器",
+          "original": "Remove Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/remove.svg",
+          "dark": "resources/dark/remove.svg"
+        }
+      },
+      {
+        "command": "remote-containers.removeRecentFolder",
+        "title": {
+          "value": "删除最近使用的文件夹",
+          "original": "Remove Recent Folder"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/remove.svg",
+          "dark": "resources/dark/remove.svg"
+        }
+      },
+      {
+        "command": "remote-containers.showDetails",
+        "title": {
+          "value": "显示详细信息",
+          "original": "Show Details"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.explorerTargetsRefresh",
+        "title": {
+          "value": "刷新",
+          "original": "Refresh"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/refresh.svg",
+          "dark": "resources/dark/refresh.svg"
+        }
+      },
+      {
+        "command": "remote-containers.explorerDetailsRefresh",
+        "title": {
+          "value": "刷新",
+          "original": "Refresh"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/refresh.svg",
+          "dark": "resources/dark/refresh.svg"
+        }
+      },
+      {
+        "command": "remote-containers.inspectDockerResource",
+        "title": {
+          "value": "检查",
+          "original": "Inspect"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.inspectInBasicDevContainer",
+        "title": {
+          "value": "在开发容器中浏览",
+          "original": "Explore in Dev Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.cloneInVolume",
+        "title": {
+          "value": "在卷中克隆存储库",
+          "original": "Clone Repository in Volume"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.removeVolume",
+        "title": {
+          "value": "删除",
+          "original": "Remove"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.newContainer",
+        "title": {
+          "value": "新的开发容器",
+          "original": "New Dev Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": {
+          "light": "resources/light/plus.svg",
+          "dark": "resources/dark/plus.svg"
+        }
+      },
+      {
+        "command": "remote-containers.showContainerLog",
+        "title": {
+          "value": "显示容器日志",
+          "original": "Show Container Log"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.addExtensionToConfig",
+        "title": {
+          "value": "添加到 devcontainer.json",
+          "original": "Add to devcontainer.json"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.checkoutPRInVolume",
+        "title": {
+          "value": "开发容器中的签出拉取请求",
+          "original": "Checkout Pull Request in Dev Container"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.showReopenInContainerNotificationReset",
+        "title": {
+          "value": "重置不显示重新打开通知",
+          "original": "Reset Don't Show Reopen Notification"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.showRecoveryContainerNotificationReset",
+        "title": {
+          "value": "重置不显示恢复容器通知",
+          "original": "Reset Don't Show Recovery Container Notification"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.labelPortAndUpdateConfig",
+        "title": {
+          "value": "设置标签并更新 devcontainer.json",
+          "original": "Set Label and Update devcontainer.json"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        },
+        "icon": "$(tag)"
+      },
+      {
+        "command": "remote-containers.installDocker",
+        "title": {
+          "value": "安装 Docker",
+          "original": "Install Docker"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.installDockerInWSL",
+        "title": {
+          "value": "在 WSL 中安装 Docker",
+          "original": "Install Docker in WSL"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.installUserCLI",
+        "title": {
+          "value": "安装 devcontainer CLI",
+          "original": "Install devcontainer CLI"
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      },
+      {
+        "command": "remote-containers.configureContainerFeatures",
+        "title": {
+          "value": "配置容器功能...",
+          "original": "Configure Container Features..."
+        },
+        "category": {
+          "value": "开发容器",
+          "original": "Dev Containers"
+        }
+      }
+    ]
+  },
+  "ms-vscode-remote.remote-ssh": {
+    "id": "ms-vscode-remote.remote-ssh",
+    "name": "remote-ssh",
+    "description": "使用 SSH 打开远程计算机上的任何文件夹，并利用 VS Code 的完整功能集。",
+    "version": "0.107.1",
+    "commands": [
+      {
+        "command": "opensshremotes.openWebUI",
+        "title": {
+          "value": "打开 Web UI",
+          "original": "Open Web UI"
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.openEmptyWindow",
+        "title": {
+          "value": "连接到主机...",
+          "original": "Connect to Host..."
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.openEmptyWindowOnCurrentHost",
+        "title": {
+          "value": "活动主机上的新窗口",
+          "original": "New Window on Active Host"
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.openEmptyWindowInCurrentWindow",
+        "title": {
+          "value": "将当前窗口连接到主机...",
+          "original": "Connect Current Window to Host..."
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.openConfigFile",
+        "title": {
+          "value": "打开 SSH 配置文件...",
+          "original": "Open SSH Configuration File..."
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.addNewSshHost",
+        "title": {
+          "value": "添加新的 SSH 主机...",
+          "original": "Add New SSH Host..."
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.cleanDevBox",
+        "title": {
+          "value": "从主机卸载 VS Code 服务器...",
+          "original": "Uninstall VS Code Server from Host..."
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.cleanRemoteServer",
+        "title": {
+          "value": "在主机上终止 VS Code 服务器...",
+          "original": "Kill VS Code Server on Host..."
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.cleanCurrentRemoteServer",
+        "title": {
+          "value": "终止当前 VS Code 服务器",
+          "original": "Kill Current VS Code Server"
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.cleanLocalServer",
+        "title": {
+          "value": "终止主机的本地连接服务器...",
+          "original": "Kill Local Connection Server For Host..."
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.getHelp",
+        "title": {
+          "value": "帮助",
+          "original": "Help"
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.getStarted",
+        "title": {
+          "value": "SSH 入门",
+          "original": "Get Started with SSH"
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.reportIssue",
+        "title": {
+          "value": "报告问题…",
+          "original": "Report Issue..."
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.settings",
+        "title": {
+          "value": "设置",
+          "original": "Settings"
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.provideFeedback",
+        "title": {
+          "value": "提供反馈",
+          "original": "Provide Feedback"
+        },
+        "category": "Remote-SSH"
+      },
+      {
+        "command": "opensshremotes.showLog",
+        "title": {
+          "value": "显示日志",
+          "original": "Show Log"
+        },
+        "category": "Remote-SSH"
+      }
+    ]
+  },
+  "ms-vscode-remote.remote-ssh-edit": {
+    "id": "ms-vscode-remote.remote-ssh-edit",
+    "name": "remote-ssh-edit",
+    "description": "Edit SSH configuration files",
+    "version": "0.86.0"
+  },
+  "ms-vscode.remote-explorer": {
+    "id": "ms-vscode.remote-explorer",
+    "name": "remote-explorer",
+    "description": "查看 SSH 和 Tunnel 的远程计算机。",
+    "version": "0.4.1",
+    "commands": [
+      {
+        "command": "remote-explorer.signIntoTunnel",
+        "title": {
+          "value": "使用 GitHub 登录",
+          "original": "Sign in with GitHub"
+        },
+        "icon": "$(arrow-right)"
+      },
+      {
+        "command": "remote-explorer.add",
+        "title": {
+          "value": "新建远程",
+          "original": "New Remote"
+        },
+        "icon": "$(plus)"
+      },
+      {
+        "command": "remote-explorer.configureSsh",
+        "title": {
+          "value": "打开 SSH 配置文件",
+          "original": "Open SSH Config File"
+        },
+        "icon": "$(gear)"
+      },
+      {
+        "command": "remote-explorer.refresh",
+        "title": {
+          "value": "刷新",
+          "original": "Refresh"
+        },
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "remote-explorer.connectToRemoteInNewWindow",
+        "title": {
+          "value": "在新窗口中连接...",
+          "original": "Connect in New Window..."
+        },
+        "icon": "$(empty-window)"
+      },
+      {
+        "command": "remote-explorer.connectToRemoteInCurrentWindow",
+        "title": {
+          "value": "在当前窗口中连接...",
+          "original": "Connect in Current Window..."
+        },
+        "icon": "$(arrow-right)"
+      },
+      {
+        "command": "remote-explorer.connectToFolderInNewWindow",
+        "title": {
+          "value": "在新窗口中连接...",
+          "original": "Connect in New Window..."
+        },
+        "icon": "$(empty-window)"
+      },
+      {
+        "command": "remote-explorer.connectToWslUsingDistro",
+        "title": "Connect using Distro in Current Window..."
+      },
+      {
+        "command": "remote-explorer.connectToWslUsingDistroInNewWindow",
+        "title": "Connect using Distro in New Window..."
+      },
+      {
+        "command": "remote-explorer.connectToFolderInCurrentWindow",
+        "title": {
+          "value": "在当前窗口中连接...",
+          "original": "Connect in Current Window..."
+        },
+        "icon": "$(arrow-right)"
+      },
+      {
+        "command": "remote-explorer.deleteFolderHistoryItem",
+        "title": {
+          "value": "从最近使用列表中删除",
+          "original": "Remove from Recent List"
+        },
+        "icon": "$(remove)"
+      },
+      {
+        "command": "remote-explorer.unregisterTunnel",
+        "title": {
+          "value": "注销隧道",
+          "original": "Unregister Tunnel"
+        },
+        "icon": "$(remove)"
+      }
+    ]
+  },
+  "pokey.command-server": {
+    "id": "pokey.command-server",
+    "name": "command-server",
+    "description": "Exposes a file-based RPC API for running VSCode commands",
+    "version": "0.9.1",
+    "commands": [
+      {
+        "command": "command-server.runCommand",
+        "title": "Read command description from a file and execute the command"
+      },
+      {
+        "command": "command-server.getFocusedElementType",
+        "title": "Returns the type of the currently focused element in vscode"
+      }
+    ]
+  },
+  "ryuta46.multi-command": {
+    "id": "ryuta46.multi-command",
+    "name": "multi-command",
+    "description": "Invoke multiple commands as one command.",
+    "version": "1.6.0",
+    "commands": [
+      {
+        "command": "extension.multiCommand.execute",
+        "title": "Execute multi command",
+        "category": "Multi command"
+      }
+    ]
+  }
+}

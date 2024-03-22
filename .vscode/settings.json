@@ -130,7 +130,10 @@
 				// 下面的可以发挥作用
 				// "markdown.showPreviewToSide"
 				// "workbench.action.terminal.toggleTerminal"
-				"vscode-command-inspector.dumpExtensionCommandsAsJSON"
+				// "vscode-command-inspector.dumpExtensionCommandsAsJSON"
+
+				"handydandy-notebook.openInNotebook",
+
 
 				
 

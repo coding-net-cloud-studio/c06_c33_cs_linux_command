@@ -1,0 +1,429 @@
+{
+  "AMiner.codegeex": {
+    "id": "AMiner.codegeex",
+    "identifier": {
+      "value": "AMiner.codegeex",
+      "_lower": "aminer.codegeex"
+    },
+    "isBuiltin": false,
+    "isUserBuiltin": false,
+    "isUnderDevelopment": false,
+    "extensionLocation": {
+      "$mid": 1,
+      "fsPath": "/home/aia/.vscode/extensions/aminer.codegeex-2.6.1",
+      "path": "/home/aia/.vscode/extensions/aminer.codegeex-2.6.1",
+      "scheme": "file"
+    },
+    "uuid": "b91906a1-03a8-46a2-9b63-bf81bc854a30",
+    "targetPlatform": "undefined",
+    "publisher": "AMiner",
+    "name": "codegeex",
+    "displayName": "CodeGeeX: AI Code AutoComplete, Chat, Auto Comment",
+    "description": "CodeGeeX is an AI-based coding assistant, which can suggest code in the current or following lines.  It is powered by a large-scale multilingual code generation model with 13 billion parameters, pretrained on a large code corpus of more than 20 programming languages.",
+    "homepage": "https://codegeex.ai",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/THUDM/CodeGeeX2"
+    },
+    "icon": "./media/codegeex_logo.png",
+    "version": "2.6.1",
+    "engines": {
+      "vscode": "^1.68.0"
+    },
+    "categories": [
+      "Programming Languages",
+      "Snippets",
+      "Machine Learning",
+      "Other"
+    ],
+    "keywords": [
+      "python",
+      "go",
+      "java",
+      "javascript",
+      "c++",
+      "c#",
+      "php",
+      "typescript",
+      "ai",
+      "autocomplete",
+      "inline completion",
+      "code explanation",
+      "code generation",
+      "chat",
+      "chatglm"
+    ],
+    "activationEvents": [
+      "*"
+    ],
+    "main": "./dist/extension.js",
+    "l10n": "./l10n",
+    "contributes": {
+      "commands": [
+        {
+          "command": "codegeex.login",
+          "title": {
+            "value": "CodeGeeX: 登录",
+            "original": "CodeGeeX: Login"
+          }
+        },
+        {
+          "command": "codegeex.disable-enable",
+          "title": {
+            "value": "CodeGeeX: 禁用或启用自动补全",
+            "original": "CodeGeeX: Disable or enable CodeGeeX"
+          }
+        },
+        {
+          "command": "codegeex.chat.focus",
+          "title": {
+            "value": "CodeGeeX: 聚焦到聊天框",
+            "original": "CodeGeeX: Focus Chat Input"
+          }
+        },
+        {
+          "command": "codegeex.review",
+          "title": {
+            "value": "使用 CodeGeeX 进行 Code Review",
+            "original": "Use CodeGeeX for Code Review"
+          },
+          "icon": "$(codegeex-dark)",
+          "enablement": "codegeex.canReview"
+        },
+        {
+          "command": "codegeex.expandInlineChat",
+          "title": "open chat"
+        },
+        {
+          "command": "codegeex.inlinechat.submit",
+          "title": "Submit"
+        },
+        {
+          "command": "codegeex.ask",
+          "title": {
+            "value": "CodeGeeX: 提交",
+            "original": "CodeGeeX: Submit"
+          },
+          "enablement": "!commentIsEmpty"
+        },
+        {
+          "command": "codegeex.askcodegeex.tests",
+          "title": {
+            "value": "生成单测",
+            "original": "Generate Tests"
+          }
+        },
+        {
+          "command": "codegeex.askcodegeex",
+          "title": {
+            "value": "向CodeGeeX提问",
+            "original": "Ask CodeGeeX"
+          }
+        },
+        {
+          "command": "codegeex.askcodegeex.explain",
+          "title": {
+            "value": "解释代码",
+            "original": "Explain Code"
+          }
+        },
+        {
+          "command": "codegeex.askcodegeex.comment",
+          "title": {
+            "value": "生成注释",
+            "original": "Generate Comment"
+          }
+        }
+      ],
+      "viewsContainers": {
+        "activitybar": [
+          {
+            "id": "codegeex-sidebar",
+            "title": "CodeGeeX",
+            "icon": "./media/logo-codegeex.png"
+          }
+        ]
+      },
+      "views": {
+        "codegeex-sidebar": [
+          {
+            "type": "webview",
+            "id": "codegeex-qa",
+            "name": ""
+          }
+        ]
+      },
+      "configuration": [
+        {
+          "title": "Language Preference",
+          "properties": {
+            "Codegeex.Comment.LanguagePreference": {
+              "title": "Comment Language Preference",
+              "type": "string",
+              "default": "Default",
+              "enum": [
+                "English",
+                "中文",
+                "Default"
+              ],
+              "description": "选择您想要的注释语言。"
+            },
+            "Codegeex.Chat.LanguagePreference": {
+              "type": "string",
+              "default": "Default",
+              "enum": [
+                "English",
+                "中文",
+                "Default"
+              ],
+              "description": "为聊天回复设置语言。"
+            },
+            "Codegeex.SidebarUI.LanguagePreference": {
+              "type": "string",
+              "default": "Default",
+              "enum": [
+                "English",
+                "中文",
+                "Default"
+              ],
+              "description": "设置您的侧边栏UI语言"
+            }
+          }
+        },
+        {
+          "title": "Completion Settings",
+          "properties": {
+            "Codegeex.CompletionModel": {
+              "type": "string",
+              "default": "CodeGeeX Lite",
+              "description": "配置用于代码补全的模型。",
+              "enum": [
+                "CodeGeeX Lite",
+                "CodeGeeX Pro[Beta]"
+              ],
+              "enumDescriptions": [
+                "足以完成日常任务",
+                "对于复杂代码更准确"
+              ]
+            },
+            "Codegeex.CandidateNum": {
+              "type": "string",
+              "enum": [
+                "1 (快)",
+                "2 (中)",
+                "3 (慢)"
+              ],
+              "default": "1 (快)",
+              "description": "每次补全的最多选项数目，选项越多，生成速度越慢。"
+            },
+            "Codegeex.CompletionDelay": {
+              "type": "number",
+              "minimum": 0.1,
+              "default": 0.5,
+              "description": "生成延迟时间，用来避免不必要的建议。"
+            },
+            "Codegeex.EnableExtension": {
+              "type": "boolean",
+              "default": true,
+              "description": "勾选以启用代码自动补全。"
+            },
+            "Codegeex.DisabledFor": {
+              "type": "object",
+              "additionalProperties": "string",
+              "default": {},
+              "markdownDescription": "该列表为您暂时禁用的语言列表，您也可以手动设置，将语言写在键的位置，*将数值设定为true即可禁用该种语言，设定为false即可重新启用该种语言，您也可以点击状态栏的图标来完成该设置。<br/>* *键值需要设定一个有效的语言id比如：python, shellscript, csharp, objective-cpp 等等* 您也可以点击状态栏的语言选项，来查看相应的语言，括号里面即为相应的语言id。"
+            },
+            "Codegeex.GenerationPreference": {
+              "type": "string",
+              "enum": [
+                "automatic",
+                "line by line",
+                "block"
+              ],
+              "default": "automatic",
+              "description": "您可以选择您的生成偏好。如果您选择automatic，插件会根据您的输入生成一段或者一句。如果您选择line by line， 插件会每次生成一行代码，一行注释或者一行代码加一行注释。"
+            },
+            "Codegeex.OnlyKeyControl": {
+              "type": "boolean",
+              "default": null,
+              "description": "如果您想在自动补全模式中通过快捷键alt/option+\\控制只在需要的时候生成，勾选此项。"
+            }
+          }
+        },
+        {
+          "title": "Advanced Settings",
+          "properties": {
+            "Codegeex.UseSimilarFileForPrompt": {
+              "type": "boolean",
+              "default": false,
+              "description": "勾选此项，当插件发现相似文件时，每次发送请求，相似文件会被添加到您的prompt中。"
+            }
+          }
+        },
+        {
+          "title": "Privacy",
+          "properties": {
+            "Codegeex.Privacy": {
+              "type": "boolean",
+              "description": "是否接受以研究为用途分享生成的代码来帮助CodeGeeX变得更好。否则，您的代码将不会被储存并只被用于帮助您写代码。",
+              "default": null
+            }
+          }
+        }
+      ],
+      "keybindings": [
+        {
+          "command": "codegeex.new-completions",
+          "key": "Alt+\\",
+          "when": "editorFocus && !editorReadonly"
+        },
+        {
+          "command": "codegeex.translate-mode",
+          "key": "Alt+ctrl+T",
+          "when": "editorFocus && !editorReadonly"
+        },
+        {
+          "command": "codegeex.welcome-page",
+          "key": "Alt+ctrl+W"
+        },
+        {
+          "command": "editor.action.inlineSuggest.commit",
+          "key": "Tab",
+          "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && editorFocus &&!editorReadonly"
+        },
+        {
+          "command": "codegeex.chat.toggle",
+          "key": "Alt+ctrl+I",
+          "mac": "ctrl+cmd+I"
+        },
+        {
+          "command": "codegeex.expandInlineChat",
+          "key": "ctrl+i",
+          "mac": "cmd+i",
+          "when": "codegeex.enableComment"
+        },
+        {
+          "command": "editor.action.submitComment",
+          "key": "ctrl+enter",
+          "when": "commentEditorFocused && commentController == codegeex-inline-chat && codegeex.enableComment"
+        }
+      ],
+      "menus": {
+        "comments/commentThread/context": [
+          {
+            "command": "codegeex.ask",
+            "group": "inline",
+            "when": "commentController == codegeex-inline-chat"
+          }
+        ],
+        "comments/comment/context": [
+          {
+            "command": "codegeex.ask",
+            "group": "inline",
+            "when": "commentController == codegeex-inline-chat"
+          }
+        ],
+        "editor/context": [
+          {
+            "submenu": "codegeex.tool",
+            "group": "navigation"
+          }
+        ],
+        "codegeex.tool": [
+          {
+            "command": "codegeex.askcodegeex",
+            "when": "editorFocus && !editorReadonly"
+          },
+          {
+            "command": "codegeex.askcodegeex.explain",
+            "when": "editorFocus && !editorReadonly"
+          },
+          {
+            "command": "codegeex.askcodegeex.comment",
+            "when": "editorFocus && !editorReadonly"
+          },
+          {
+            "command": "codegeex.askcodegeex.tests",
+            "when": "editorFocus && !editorReadonly"
+          }
+        ],
+        "editor/title": [
+          {
+            "command": "codegeex.review",
+            "group": "navigation",
+            "when": "isInDiffEditor"
+          }
+        ]
+      },
+      "submenus": [
+        {
+          "id": "codegeex.tool",
+          "label": "CodeGeeX"
+        }
+      ],
+      "icons": {
+        "codegeex-dark": {
+          "description": "CodeGeeX icon",
+          "default": {
+            "fontPath": "./media/codegeex.woff",
+            "fontCharacter": "\\E001"
+          }
+        }
+      }
+    },
+    "scripts": {
+      "submodules:install": "cd webview-ui && npm i",
+      "submodules:gitpull": "cd webview-ui && git pull",
+      "vscode:prepublish": "cd webview-ui && npm run build && cd ../ && npm run build",
+      "compile": "webpack --mode development",
+      "watch": "webpack --mode development --watch",
+      "compile-tests": "tsc -p . --outDir out",
+      "watch-tests": "tsc -p . -w --outDir out",
+      "pretest": "npm run compile && npm run lint",
+      "lint": "eslint src --ext ts",
+      "test": "node ./out/test/runTest.js",
+      "build": "webpack --mode $MODE --devtool hidden-source-map",
+      "package": "NODE_ENV=$MODE vsce package --allow-star-activation && NODE_ENV=$MODE node scripts/postbuild.js",
+      "package:dev": "PLATFORM=vscode MODE=development npm run package",
+      "package:prod": "PLATFORM=vscode MODE=production npm run package",
+      "all-in-one:package:prod": "TARGET=all-in-one. npm run package:prod"
+    },
+    "devDependencies": {
+      "@sentry/webpack-plugin": "^2.14.2",
+      "@types/glob": "^7.2.0",
+      "@types/mocha": "^9.1.1",
+      "@types/node": "16.x",
+      "@types/uuid": "^9.0.0",
+      "@types/vscode": "^1.68.0",
+      "@typescript-eslint/eslint-plugin": "^5.31.0",
+      "@typescript-eslint/parser": "^5.31.0",
+      "@vscode/l10n-dev": "^0.0.29",
+      "@vscode/test-electron": "^2.1.5",
+      "copy-webpack-plugin": "^11.0.0",
+      "eslint": "^8.20.0",
+      "glob": "^8.0.3",
+      "mocha": "^10.0.0",
+      "terser-webpack-plugin": "^5.3.9",
+      "ts-loader": "^9.5.1",
+      "typescript": "^4.7.4",
+      "webpack": "^5.89.0",
+      "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+      "@sentry/integrations": "^7.102.1",
+      "@sentry/node": "^7.99.0",
+      "@types/git-diff": "^2.0.7",
+      "@vscode/l10n": "^0.0.10",
+      "@vscode/vsce": "^2.19.0",
+      "@vscode/webview-ui-toolkit": "^1.2.0",
+      "axios": "^0.24.0",
+      "fastest-levenshtein": "^1.0.16",
+      "git-diff": "^2.0.6",
+      "git-last-commit": "^1.0.1",
+      "i18next": "^23.5.1",
+      "react-i18next": "^13.2.2",
+      "uuid": "^9.0.0",
+      "web-tree-sitter": "^0.20.8"
+    }
+  }
+}
