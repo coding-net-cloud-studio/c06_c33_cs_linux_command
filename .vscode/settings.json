@@ -119,7 +119,9 @@
 				},
 				// "handydandy-notebook.showPreviewToSide"
 				// "markdown.showPreviewToSide"
-				"workbench.action.terminal.toggleTerminal"
+				// 下面的可以发挥作用
+				// "workbench.action.terminal.toggleTerminal"
+				"workbench.extensions.action.showInstalledExtensions"
 
 			]
 		}
