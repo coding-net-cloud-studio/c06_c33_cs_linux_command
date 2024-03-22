@@ -134,7 +134,7 @@
 				{
 					"command": "command-runner.run",
 					"args": { 
-						"command": "echo ${workspaceFolder}" 
+						"command": "echo ${workspaceFolder} && echo ${file}" 
 					}
 				}
 
