@@ -118,7 +118,9 @@
 					}
 				},
 				// "handydandy-notebook.showPreviewToSide"
-				"markdown.showPreviewToSide"
+				// "markdown.showPreviewToSide"
+				"workbench.action.terminal.toggleTerminal"
+
 			]
 		}
 	}
