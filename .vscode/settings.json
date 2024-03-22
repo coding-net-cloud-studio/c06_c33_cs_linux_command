@@ -125,12 +125,14 @@
 				// "workbench.extensions.action.showInstalledExtensions"
 				// "cloudstuido.getBrowserUrl"
 				// "workbench.action.toggleMenuBar"
+				// "handydandy-notebook.openInNotebook"
 
 				// 下面的可以发挥作用
 				// "markdown.showPreviewToSide"
 				// "workbench.action.terminal.toggleTerminal"
+				"vscode-command-inspector.dumpExtensionCommandsAsJSON"
 
-				"handydandy-notebook.openInNotebook"
+				
 
 				// NOTE 第一次是发挥了作用_总之有进步
 				// "workbench.action.reopenWithEditor"
