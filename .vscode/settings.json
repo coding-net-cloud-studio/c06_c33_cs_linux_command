@@ -124,10 +124,10 @@
 				"cursorDown",
 				"cursorDown",
 				"cursorBottom",
-				{ 
-					"command": "type",
-					"args": { "text": "Hello_这是我写的_在文件中_${file}" }
-				},
+				// { 
+				// 	"command": "type",
+				// 	"args": { "text": "Hello_这是我写的_在文件中_${file}" }
+				// },
 				{
 					"command": "command-runner.run",
 					"args": { 
@@ -138,6 +138,12 @@
 					"command": "command-runner.run",
 					"args": { 
 						"command": "echo ${file}" 
+					}
+				},
+				{
+					"command": "command-runner.run",
+					"args": { 
+						"command": "cloudstudio ${file}" 
 					}
 				}
 
