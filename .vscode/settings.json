@@ -124,8 +124,10 @@
 				// "cloudstuido.getBrowserUrl"
 
 				// 下面的可以发挥作用
-				"markdown.showPreviewToSide"
+				// "markdown.showPreviewToSide"
 				// "workbench.action.terminal.toggleTerminal"
+
+				"workbench.action.toggleMenuBar"
 
 
 				// 可以发挥作用_但是会反复多次_重载窗口_慎用
