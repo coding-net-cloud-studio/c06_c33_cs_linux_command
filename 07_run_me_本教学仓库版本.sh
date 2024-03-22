@@ -36,7 +36,8 @@ f16_cs_vs_settings_user_update(){
 	"extensions.autoUpdate": false,
 	"update.mode": "none",
 	"update.showReleaseNotes": false,
-	"code-runner.runInTerminal": true
+	"code-runner.runInTerminal": true,
+	"window.menuBarVisibility": "visible"
 }
 EOF
 	) > ${CS_VSCODE_SETTINGS_USER}
