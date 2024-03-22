@@ -117,12 +117,16 @@
 						"delay": 1000
 					}
 				},
+				// NOTE 下面的没有发挥作用_是错误的
 				// "handydandy-notebook.showPreviewToSide"
-				"handydandy-notebook"
-				// "markdown.showPreviewToSide"
-				// 下面的可以发挥作用
-				// "workbench.action.terminal.toggleTerminal"
+				// "handydandy-notebook"
 				// "workbench.extensions.action.showInstalledExtensions"
+
+				// 下面的可以发挥作用
+				// "markdown.showPreviewToSide"
+				// "workbench.action.terminal.toggleTerminal"
+				"cloudstuido.getBrowserUrl"
+	
 
 			]
 		}
