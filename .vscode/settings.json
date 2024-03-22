@@ -107,6 +107,11 @@
 	},
 	// https://blog.csdn.net/qq_57749525/article/details/122509663
 
+	// https://marketplace.visualstudio.com/items?itemName=edonet.vscode-command-runner
+	"command-runner.terminal.name": "runCommand",
+    "command-runner.terminal.autoClear": true,
+    "command-runner.terminal.autoFocus": true,
+
 	// https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command
 	"multiCommand.commands": [
 		{
@@ -122,6 +127,9 @@
 				{ 
 					"command": "type",
 					"args": { "text": "Hello_这是我写的_在文件中_${file}" }
+				},
+				{
+					"command": "command-runner.run",
 				},
 				{
 					"command": "command-runner.run",
