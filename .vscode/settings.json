@@ -104,5 +104,21 @@
 		"editor.codeActionsOnSave": {
 			"source.organizeImports": "explicit"
 		}
+	},
+	"automaton.list": {
+		"markdownShowPreview": {
+			"description" : "Default markdown preview on load",
+			"onLoad": true,
+			"onFileExtension":".md",
+			"action" :[
+				{
+					"command": "$delay",
+					"args": {
+						"delay": 1000
+					}
+				},
+				"markdown.showPreviewToSide"
+			]
+		}
 	}
 }
