@@ -117,7 +117,13 @@
 				"cursorDown",
 				"cursorDown",
 				"cursorDown",
-				"cursorDown"
+				"cursorDown",
+				"cursorBottom",
+				{ 
+					"command": "type",
+					"args": { "text": "Hello_这是我写的" }
+				}
+
 			]
 		},
 		{
