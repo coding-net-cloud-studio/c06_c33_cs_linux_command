@@ -130,11 +130,14 @@
 				},
 				{
 					"command": "command-runner.run",
+					"args": { 
+						"command": "echo ${workspaceFolder}" 
+					}
 				},
 				{
 					"command": "command-runner.run",
 					"args": { 
-						"command": "echo ${workspaceFolder} && echo ${file}" 
+						"command": "echo ${file}" 
 					}
 				}
 
