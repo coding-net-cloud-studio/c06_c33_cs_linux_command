@@ -130,11 +130,13 @@
 				// "markdown.showPreviewToSide"
 				// "workbench.action.terminal.toggleTerminal"
 
+				"handydandy-notebook.openInNotebook"
+
 				// NOTE 第一次是发挥了作用_总之有进步
 				// "workbench.action.reopenWithEditor"
 
 				// https://cloud.tencent.com/developer/ask/sof/106978626?from=16139
-				"vscode.open"
+				// "vscode.open"
 
 
 
