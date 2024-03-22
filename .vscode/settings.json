@@ -107,9 +107,9 @@
 	},
 	"automaton.list": {
 		"markdownShowPreview": {
-			"description" : "Default markdown preview on load",
+			"description" : "如何把handy_notebook的hdnb文件用handy扩展给展现出来",
 			"onLoad": true,
-			"onFileExtension":".md",
+			"onFileExtension":".hdnb",
 			"action" :[
 				{
 					"command": "$delay",
@@ -117,8 +117,8 @@
 						"delay": 1000
 					}
 				},
-				"handydandy-notebook.showPreviewToSide"
-				// "markdown.showPreviewToSide"
+				// "handydandy-notebook.showPreviewToSide"
+				"markdown.showPreviewToSide"
 			]
 		}
 	}
