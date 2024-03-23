@@ -154,7 +154,7 @@
 				{
 					"command": "command-runner.run",
 					"args": {
-						"command": "cloudstudio ${file}"
+						"command": "wmcloudstudio ${file}"
 					}
 				}
 
@@ -202,8 +202,10 @@
 	// 60_该automation试图_执行_另外一个vscode扩展_multiCommand
 	// 70_而上面所述的multiCommand扩展_将试图执行多个命令
 	// 80_在上面所述的multiCommand扩展_最重要的将是执行_另外一个vscode扩展_command-runner
-	// 90_而command-runner扩展_将试图执行_一个命令_就是如下的核心命令_cloudstudio ${file}
-	// 100_而cloudstudio ${file}命令_将试图打开_当前文件的_也就是那个带有hdnb后缀文件的_handy_notebook_视图
+	// 90_而command-runner扩展_将试图执行_一个命令_就是如下的核心命令_wmcloudstudio ${file}
+	// 92_wmcloudstudio是在cloudstudio上封装了一点的bash的脚本
+	// 94_wmcloudstudio_力图解决的问题是_手工打开的handy文件与通过社区版本的_课程_catlog.yml打开的文件_不同处理
+	// 100_而wmcloudstudio ${file}命令_将试图打开_当前文件的_也就是那个带有hdnb后缀文件的_handy_notebook_视图
 	// 110_到这里_一个很长的执行链条_成功完成
 	// 120_而在该文件的handy_notebook视图中_可以在其中的cell中_也就是单元格中_查看markdown格式的图片_查看b站的iframe嵌入的视频_执行多种语言的代码
 
