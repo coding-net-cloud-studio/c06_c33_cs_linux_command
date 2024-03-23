@@ -413,6 +413,17 @@ l79_final_settings(){
 		fi
 	fi
 
+	# NOTE 找到bash脚本wmcloudstudio并且变为可执行文件
+	find . -name "wmcloudstudio" -exec chmod +x {} \;
+
+	# NOTE 把当前目录下wmcloudstudio拷贝到容易被找到的目录中去
+	if [[ ! -f $(which wmcloudstudio) ]]; then
+		if [[ -f ./wmcloudstudio ]]; then
+			cp ./wmcloudstudio /usr/bin/wmcloudstudio
+			cp ./wmcloudstudio /bin/wmcloudstudio
+		fi
+	fi
+
 	return 0
 }
 
