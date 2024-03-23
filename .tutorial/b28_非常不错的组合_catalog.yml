@@ -6,7 +6,7 @@ chapters:  #  需要为每个章节指定章节名,章节内容( markdown 文件
     video: "player.bilibili.com/player.html?aid=443257988&bvid=BV12L411a7Ne&cid=1152740526&p=61"
     code: "../b32_走进中国历史的长廊/t12_awk_open_d33.sh"
   - title: "第02节_没有视频_打开handy动手_手册"
-    article: "c02_wmtest_images_tutor.md"
+    article: "../c02_wmtest_images.md"
     video: ""
     code: "../b32_走进中国历史的长廊/c01_这里可以运行草蟒版python.hdnb"
   - title: "第03节_第一个程序_新建一个项目"
