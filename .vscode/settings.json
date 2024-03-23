@@ -97,14 +97,19 @@
 	"codetour.recordMode": "pattern",
 	"codetour.showMarkers": true,
 	"codetour.promptForWorkspaceTours": true,
-	"workbench.editorAssociations": {
-		"*.hdnb": "handydandy-notebook"
-	  },
+
 	"[go][go.mod]": {
 		"editor.codeActionsOnSave": {
 			"source.organizeImports": "explicit"
 		}
 	},
+
+	"workbench.editorAssociations": {
+		"*.md": "default",
+		"*.hdnb": "handydandy-notebook"
+	  },
+
+
 	// https://blog.csdn.net/qq_57749525/article/details/122509663
 
 	// Command Runner扩展的设置
