@@ -1,6 +1,7 @@
 autoOpen: true
 apps:
-    run: python3 -m http.server --directory c50_resources/b32_html/ 5000
+  - port: 5000
+    run: python3 -m http.server --directory c50_resources/b32_html/
     root: .
     name: linux_command_公告板
     description: v00.00.00.20_cloud_studio_linux_command_公告板
