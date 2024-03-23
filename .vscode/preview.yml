@@ -1,6 +1,5 @@
 autoOpen: true
 apps:
-  - port: 5000
     run: python3 -m http.server --directory c50_resources/b32_html/ 5000
     root: .
     name: linux_command_公告板
