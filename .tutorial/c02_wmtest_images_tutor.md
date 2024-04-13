@@ -1,5 +1,13 @@
 # 风里雨里,我们在"编程语言开发社区"等你
 
+```bash
+ls -lah /etc
+```
+
+```bash
+cat /etc/passwd
+```
+
 
 -已经把/root/.pyenv更新为新的草莽grasspy3.10.1的版本了  
 
